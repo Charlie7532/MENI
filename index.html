@@ -8,12 +8,23 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
 		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/preloader.css" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>MENI</title>
 		<script defer type="text/javascript" src="js/slideshow.js"></script>
 		<script defer type="text/javascript" src="js/materialize.min.js"></script>
 	</head>
 	<body>
+		<section name="PRELOADER">
+			<div id="Pre-loader"></div>
+			<script async>
+				window.addEventListener('load', () => {
+					setTimeout(() => {
+						document.getElementById('Pre-loader').style.display = 'none';
+					}, 3000);
+				});
+			</script>
+		</section>
 		<section name="HEADER">
 			<div class="header">
 				<img src="assets/pictures/Logo/LOGO CREMA.png" style="height: 40px" />
@@ -60,13 +71,15 @@
 
 				<div class="mySlides fade">
 					<!-- <div class="numbertext">2 / 3</div> -->
-					<img src="assets/pictures/banners/shutterstock_424873498.jpg" class="banner_pic" />
+					<img src="assets/pictures/banners/shutterstock_424873498.jpg" class="banner_pic hide-on-small-only" />
+					<img src="assets/pictures/banners/phone/BANNER2.png" class="banner_pic hide-on-med-and-up" />
 					<div class="text">Caption Two</div>
 				</div>
 
 				<div class="mySlides fade">
 					<!-- <div class="numbertext">3 / 3</div> -->
-					<img src="assets/pictures/banners/shutterstock_1882416772.jpg" class="banner_pic" />
+					<img src="assets/pictures/banners/shutterstock_1882416772.jpg" class="banner_pic hide-on-small-only" />
+					<img src="assets/pictures/banners/phone/BANNER3.png" class="banner_pic hide-on-med-and-up" />
 					<div class="text">Caption Three</div>
 				</div>
 
@@ -85,11 +98,11 @@
 		</section>
 
 		<section id="Our_Story" class="container">
-				<div class="vertical-center " style="width: 100vw;filter: opacity(50%); z-index: 0">
-					<video width="100%" autoplay loop muted><source src="assets/Videos/pexels-emils-vanags-6918538.mp4" type=video/mp4 ></video>
-				</div>
+			<div class="vertical-center" style="width: 100vw; filter: opacity(50%); z-index: 0">
+				<video width="100%" autoplay loop muted><source src="assets/Videos/pexels-emils-vanags-6918538.mp4" type=video/mp4 ></video>
+			</div>
 
-				<h2 class="vertical-center">HOLA HOLA HOLA</h2>
+			<h2 class="vertical-center">HOLA HOLA HOLA</h2>
 		</section>
 
 		<section name="FOOTER" class="footer">
