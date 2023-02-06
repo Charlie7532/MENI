@@ -15,37 +15,36 @@
 	</head>
 	<body>
 		<section name="HEADER">
-			<div class="header hide-on-med-and-down">
+			<div class="header">
 				<img src="assets/pictures/Logo/LOGO CREMA.png" style="height: 40px" />
-				<!-- <a href="#default" class="logo">CompanyLogo</a> -->
-				<div class="header-right">
-					<a class="active" href="#home">Home</a>
-					<a href="#Our_Story">Our Story</a>
-					<a href="#Coffee_Shop">Coffee Shop</a>
-					<a href="#Learn">Learn</a>
-					<a href="#Contact_Us">Contact Us</a>
-				</div>
-			</div>
-			<div class="hide-on-large-only">
-				<ul id="slide-out" class="sidenav">
-					<img src="assets/pictures/Logo/LOGO AZUL.png" style="width: 100%; padding: 20px; display: block; align-content: center" />
-					<br />
-					<div class="header header-right" style="top: 120px">
-						<a class="active sidenav-close" href="#home">Home</a>
-						<a class="sidenav-close" href="#Our_Story">Our Story</a>
-						<a class="sidenav-close" href="#Coffee_Shop">Coffee Shop</a>
-						<a class="sidenav-close" href="#Learn">Learn</a>
-						<a class="sidenav-close" href="#Contact_Us">Contact Us</a>
-					</div>
-				</ul>
 
-				<div class="header">
-					<img src="assets/pictures/Logo/LOGO CREMA.png" style="height: 30px" />
-					<div class="header-right">
-						<a href="#" data-target="slide-out" class="sidenav-trigger" style="padding: 20px; right: 0px; top: 0px"><i class="material-icons" style="color: #fdf9ec">menu</i></a>
+				<div class="header-right">
+					<div class="hide-on-med-and-down">
+						<a class="active" href="#home">Home</a>
+						<a href="#Our_Story">Our Story</a>
+						<a href="#Coffee_Shop">Coffee Shop</a>
+						<a href="#Learn">Learn</a>
+						<a href="#Contact_Us">Contact Us</a>
+					</div>
+
+					<div class="hide-on-large-only">
+						<a href="#" data-target="slide-out" class="sidenav-trigger" style="padding: 10px; right: 0px; top: 0px"><i class="material-icons" style="color: grey">menu</i></a>
 					</div>
 				</div>
 			</div>
+			<ul id="slide-out" class="sidenav hide-on-large-only">
+				<!-- <img src="assets/pictures/Logo/LOGO AZUL.png" style="width: 100%; padding: 20px; display: block; align-content: center" /> -->
+				<img src="assets/pictures/Logo/M.png" style="width: 50%; padding: 20px; display: block; position: absolute; align-content: center; left: 25%" />
+				<img src="assets/pictures/Logo/LÍNEA.png" style="width: 100%; position: absolute; align-content: center; top: 150px" />
+				<br />
+				<div class="header header-right" style="top: 15%">
+					<a class="active sidenav-close" href="#home">Home</a>
+					<a class="sidenav-close" href="#Our_Story">Our Story</a>
+					<a class="sidenav-close" href="#Coffee_Shop">Coffee Shop</a>
+					<a class="sidenav-close" href="#Learn">Learn</a>
+					<a class="sidenav-close" href="#Contact_Us">Contact Us</a>
+				</div>
+			</ul>
 		</section>
 
 		<section id="home" name="BANER">
@@ -71,8 +70,8 @@
 					<div class="text">Caption Three</div>
 				</div>
 
-				<a class="prev" onclick="plusSlides(-1)"><i class="material-icons">arrow_back</i></a>
-				<a class="next" onclick="plusSlides(1)"><i class="material-icons">arrow_forward</i></a>
+				<a class="prev vertical-center" onclick="plusSlides(-1)"><i class="material-icons">arrow_back</i></a>
+				<a class="next vertical-center" onclick="plusSlides(1)"><i class="material-icons">arrow_forward</i></a>
 				<a class="dotWraper">
 					<span class="dot" onclick="currentSlide(1)"></span>
 					<span class="dot" onclick="currentSlide(2)"></span>
@@ -81,28 +80,20 @@
 			</div>
 		</section>
 
-		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-
-		<section name="your destiny in a cup" style="background-color: #fdf9ec">
-			<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-			<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+		<section name="your destiny in a cup" style="background-color: #fdf9ec; height: 500px; overflow: hidden">
+			<h2>TEST TEST TEST</h2>
 		</section>
 
-		<section id="Our_Story"></section>
+		<section id="Our_Story" class="container">
+				<div class="vertical-center " style="width: 100vw;filter: opacity(50%); z-index: 0">
+					<video width="100%" autoplay loop muted><source src="assets/Videos/pexels-emils-vanags-6918538.mp4" type=video/mp4 ></video>
+				</div>
+
+				<h2 class="vertical-center">HOLA HOLA HOLA</h2>
+		</section>
 
 		<section name="FOOTER" class="footer">
-			<img src="assets/pictures/Logo/LOGO CREMA_COMPLETO.png" style="height: 300px; padding: 50px; position: absolute; right: 20px" />
+			<img src="assets/pictures/Logo/LOGO CREMA_COMPLETO.png" style="height: 300px; padding: 50px; position: absolute; right: 0px" />
 		</section>
 
 		<script>
@@ -114,7 +105,6 @@
 			document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 				anchor.addEventListener('click', function (e) {
 					e.preventDefault();
-
 					document.querySelector(this.getAttribute('href')).scrollIntoView({
 						behavior: 'smooth',
 					});
