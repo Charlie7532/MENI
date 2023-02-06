@@ -1,12 +1,42 @@
 /** @format */
 
+@font-face {
+	font-family: NowAltFont;
+	src: url(/assets/fonts/NowAltFont/NowAlt-Regular.otf);
+}
+
 * {
 	box-sizing: border-box;
 }
 body {
 	font-family: Verdana, sans-serif;
 	margin: 0;
-    background-color: #151a21;
+	background-color: #151a21;
+	font-family: NowAltFont;
+}
+
+h1 {
+	font-size: 15px;
+	padding: 8px 8px;
+	position: absolute;
+	bottom: 25px;
+	text-align: center;
+	
+	
+	color: blue;
+}
+h3 {
+
+	color: #f2f2f2;
+	font-size: 15px;
+	padding: 8px 8px;
+	position: absolute;
+	bottom: 25px;
+	width: 100%;
+	text-align: center;
+
+
+	font-size: 1rem;
 }
 
 .mySlides {
@@ -18,7 +48,9 @@ img {
 
 /* Slideshow container */
 .slideshow-container {
+	/* height: fit-content; */
 	height: 100vh;
+
 	position: relative;
 	margin: auto;
 	overflow: hidden;
@@ -51,7 +83,7 @@ img {
 .prev:hover,
 .next:hover {
 	background-color: #151a2180;
-    color: #fdf9ec;
+	color: #fdf9ec;
 	border-radius: 30px;
 }
 
@@ -131,7 +163,7 @@ img {
 	width: 100%;
 	z-index: 900;
 	overflow: hidden;
-	background-color: #f1f1f1, 0%;
+	background-color: transparent;
 	padding: 10px 10px;
 }
 
@@ -142,6 +174,7 @@ img {
 	padding: 12px;
 	text-decoration: none;
 	font-size: 18px;
+	text-transform: uppercase;
 	line-height: 25px;
 	border-radius: 4px;
 }
@@ -165,14 +198,52 @@ img {
 	float: right;
 }
 
-@media screen and (max-width: 500px) {
+.header-right a {
+	letter-spacing: 0.15rem;
+}
+
+@media screen and (max-width: 1000px) {
 	.header a {
 		float: none;
+		color: #151a2180;
+		float: none;
 		display: block;
-		text-align: left;
+		text-align: right;
 	}
 
-	.header-right {
-		float: none;
+	.header a:hover {
+		background-color: transparent;
+		color: #151a21;
 	}
+
+	.header a.active {
+		background-color: transparent;
+		color: #151a21;
+	}
+}
+
+.banner_pic {
+	width: 100%;
+	/* width: fit-content;
+	height: fit-content; */
+	text-align: center;
+	/* top: 50%; */
+	/* height: 100vh; */
+	justify-content: center;
+	display: block;
+	margin: auto;
+}
+/* 
+@media screen and (max-width: 500px) {
+	.banner_pic {
+		width: fit-content;
+		height: 100vh;
+	}
+} */
+
+.sidenav {
+	background-color: #fdf9ec;
+	height: 100vh;
+	width: 200px;
+	border-radius: 25px 0 0 25px;
 }
