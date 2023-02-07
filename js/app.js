@@ -1,15 +1,15 @@
 /** @format */
-
 document.addEventListener('DOMContentLoaded', function () {
-    
 	M.Sidenav.init(document.querySelectorAll('.sidenav'), { edge: 'right' });
-	M.Carousel.init(document.querySelectorAll('.carousel'), {
+	var Baner = M.Carousel.init(document.querySelectorAll('.carousel'), {
 		fullWidth: true,
 		indicators: true,
-        duration:1,
+		duration: 1,
 	});
 
-	// setTimeout(showSlides, 3000);
+	setTimeout(() => {
+		Baner.next();
+	}, 3000);
 });
 
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
