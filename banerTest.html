@@ -14,19 +14,9 @@
 		<title>MENI</title>
 		<script defer type="text/javascript" src="js/slideshow.js"></script>
 		<script defer type="text/javascript" src="js/materialize.min.js"></script>
-		<script defer type="text/javascript" src="js/app.js"></script>
+		<!-- <script defer type="text/javascript" src="js/app.js"></script> -->
 	</head>
 	<body>
-		<section name="PRELOADER">
-			<div id="Pre-loader"></div>
-			<script async>
-				window.addEventListener('load', () => {
-					setTimeout(() => {
-						document.getElementById('Pre-loader').style.display = 'none';
-					}, 3000);
-				});
-			</script>
-		</section>
 		<section name="HEADER">
 			<div class="header">
 				<img src="assets/pictures/Logo/LOGO_GRIS.png" style="height: 45px" />
@@ -61,27 +51,27 @@
 		</section>
 
 		<section id="home" name="BANER">
-			<div class="slideshow-container">
-				<div class="mySlides fade">
-					<img src="assets/pictures/banners/BANNER 1.png" class="img1 hide-on-small-only" />
-					<img src="assets/pictures/banners/phone/BANNER 1.png" class="img1 hide-on-med-and-up" />
+			<div class="slideshow-container carousel carousel-slider">
+				<!-- <div class="carousel-fixed-item center">
+					<a class="btn waves-effect white grey-text darken-text-2">button</a>
+				</div> -->
+				<div class="carousel-item" href="#one!">
+					<img src="assets/pictures/banners/BANNER 1.png" class=" hide-on-small-only" />
+					<img src="assets/pictures/banners/phone/BANNER 1.png" class=" hide-on-med-and-up" />
 
 					<div class="continer vertical_center center-align eBlock">
 						<h3 class="hero1_SubTitle">Write your own destiny</h3>
 						<h1 class="hero1_Title">IN THE NAME OF COFFEE</h1>
 						<div class="hero1_content center">
-							<h6 style="max-width: 450px">
-								Whenever you take a sip of Meni's elixir, remember that you're aligning yourself with the power of the <b>goddess of fate and destiny.</b>
-							</h6>
+							<h6 style="max-width: 450px">Whenever you take a sip of Meni's elixir, remember that you're aligning yourself with the power of the <b>goddess of fate and destiny.</b></h6>
 						</div>
 						<div>
 							<a href="#Our_Story" class="waves-effect waves-light mybtn">LEARN MORE</a>
 						</div>
 					</div>
 				</div>
-
-				<div class="mySlides fade">
-					<img src="assets/pictures/banners/shutterstock_424873498.jpg" class="img1 hide-on-small-only" />
+				<div class="carousel-item" href="#two!">
+                    <img src="assets/pictures/banners/shutterstock_424873498.jpg" class="img1 hide-on-small-only" />
 					<img src="assets/pictures/banners/phone/BANNER2.png" class="img1 hide-on-med-and-up" />
 
 					<div class="continer vertical_center right-align eBlock">
@@ -102,9 +92,8 @@
 						</div>
 					</div>
 				</div>
-
-				<div class="mySlides fade">
-					<img src="assets/pictures/banners/shutterstock_1882416772.jpg" class="img2 hide-on-small-only" />
+				<div class="carousel-item" href="#three!">
+                    <img src="assets/pictures/banners/shutterstock_1882416772.jpg" class="img2 hide-on-small-only" />
 					<img src="assets/pictures/banners/phone/BANNER3.png" class="img1 hide-on-med-and-up" />
 
 					<div class="continer vertical_center left-align eBlock">
@@ -124,77 +113,21 @@
 						</div>
 					</div>
 				</div>
-
-				<a class="prev vertical_center" onclick="plusSlides(-1)"><i class="material-icons">arrow_back</i></a>
-				<a class="next vertical_center" onclick="plusSlides(1)"><i class="material-icons">arrow_forward</i></a>
-				<a class="dotWraper">
-					<span class="dot" onclick="currentSlide(1)"></span>
-					<span class="dot" onclick="currentSlide(2)"></span>
-					<span class="dot" onclick="currentSlide(3)"></span>
-				</a>
 			</div>
 		</section>
-
-		<section id="Our_elixir" style="background-color: #fdf9ec">
-			<dic class="container">
-				<div class="center-align" style="padding: 5%; font-size: 1rem;">
-					<h5>YOUR DESTINY IN A CUP</h5>
-					<h6 class="dark">Revolutionizing specialty coffee, one cup at a time.</h6>
-				</div>
-				<div class="row" style="font-size: 0.6rem;">
-					<div class="center-align col s12 m4">
-						<img src="assets/pictures/elements/beans.png" alt="" style="height: 150px" /> <br /><br />
-						<h5 class="dark"><b>DESTINED FOR GREATNESS</b></h5>
-						<br />
-						<p>
-							Our commitment to the dedicated coffee producers in our network is to reward their extraordinary quality with fair, high and stable prices. By partnering with them, we help bring
-							stability and prosperity, just as the goddess Meni blesses those she favors.
-						</p>
-					</div>
-					<div class="center-align col s12 m4">
-						<img src="assets/pictures/elements/ground.png" alt="" style="height: 150px" /> <br /><br />
-						<h5 class="dark"><b>ROASTED WITH PURPOSE</b></h5>
-						<br />
-						<p>
-							Our master roasters believe in bringing out each coffee's unique character. Rather than homogenizing the flavor, we roast with care and respect, just as Meni guides us to reach our full
-							potential.
-						</p>
-					</div>
-					<div class="center-align col s12 m4">
-						<img src="assets/pictures/elements/brewed.png" alt="" style="height: 150px" /><br /><br />
-						<h5 class="dark"><b>FRESH FROM THE SOURCE</b></h5>
-						<br />
-						<p>
-							We believe that fresh coffee should move quickly, just as fate moves swiftly for those blessed by Meni. Savor the exceptional quality and taste the difference with Meni, your destiny in
-							a cup.
-						</p>
-					</div>
-				</div>
-				<br />
-			</dic>
-		</section>
-
-		<section id="Our_Story" class="container videoC">
-			<div class="vertical_center" style="width: 100vw; filter: opacity(80%); z-index: 0">
-				<video width="100%" autoplay loop muted><source src="assets/Videos/pexels-emils-vanags-6918538.mp4" type=video/mp4 ></video>
-			</div>
-			<div class="container center-align eBlock">
-				<h1 class="text_shadow">OUR STORY</h1>
-
-				<div style="max-width: 500px; margin-left: auto; margin-right: auto;">
-					<h6 class="center">
-						Our commitment to the dedicated coffee producers in our network is to reward their extraordinary quality with fair, high and stable prices. By partnering with them, we help bring stability
-						and prosperity, just as the goddess Meni blesses those she favors.
-					</h6>
-				</div>
-
-				<!-- <a  class="waves-effect waves-light mybtn">READ MORE</a> -->
-			</div>
-		</section>
-		<section id="Coffee_shop"></section>
 
 		<section id="Contact_Us" name="FOOTER" class="footer">
 			<img src="assets/pictures/Logo/LOGO CREMA_COMPLETO.png" style="height: 300px; padding: 50px; position: absolute; right: 0px" />
 		</section>
+
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				var elems = document.querySelectorAll('.sidenav');
+				M.Carousel.init(document.querySelectorAll('.carousel'), {
+					fullWidth: true,
+					indicators: true,
+				});
+			});
+		</script>
 	</body>
 </html>
