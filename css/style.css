@@ -26,11 +26,7 @@ body {
 	font-family: NowAltFont;
 	font-size: 16px;
 }
-@media only screen and (max-width: 600px) {
-	body {
-		font-size: 8px;
-	}
-}
+
 
 .center {
 	display: flex;
@@ -51,8 +47,12 @@ h1 {
 }
 
 h2 {
-	color: #f2f2f2;
-	text-align: center;
+	font-family: NowAlt_Bold;
+	font-size: 3.5em;
+	letter-spacing: 0.2em;
+	color: #fdf9ec;
+	padding: 5px;
+	margin: 0;
 }
 
 h3,
@@ -93,6 +93,10 @@ p {
 .text_shadow {
 	text-shadow: 2px 2px 4px #000000;
 }
+.text_shadow2 {
+	text-shadow: 2px 2px 4px #000000;
+}
+
 
 .eBlock {
 	position: relative;
@@ -106,6 +110,7 @@ p {
 .mybtn,
 .mybtn2 {
 	color: #151a21;
+	font-size: 1rem;
 	background-color: #fdf9ec;
 	border: 1px solid #fdf9ec;
 	padding: 10px 30px;
@@ -412,4 +417,19 @@ img {
 	height: 100vh;
 	width: 200px;
 	border-radius: 25px 0 0 25px;
+}
+
+@media only screen and (max-width: 600px) {
+	body {
+		font-size: 8px;
+	}
+	.text_shadow{
+		font-size: 35px;
+	}
+	.mybtn, .mybtn2{
+		padding: 10px 15px;
+	}
+	.mybtn2{
+		background-color: #151a21;
+	}
 }
