@@ -1,0 +1,54 @@
+/** @format */
+
+.hero1_Title {
+	animation-name: example;
+	animation-duration: 4s;
+}
+.hero2_Title, .hero3_Title {
+    text-shadow: 2px 2px 4px #000000;
+    padding: 0 0 0 0;
+	animation-name: example;
+	animation-duration: 4s;
+}
+
+.hero1_SubTitle, .hero2_SubTitle, .hero3_SubTitle {
+	padding-top: 18%;
+	animation-name: fade;
+	animation-duration: 2s;
+	animation-delay: 10s;
+}
+
+.hero1_content,
+.hero2_content,
+.hero3_content {
+	width: 100%;
+	padding: 0%;
+	margin-left: auto;
+	margin-right: auto;
+
+	animation-name: fade;
+	animation-duration: 2s;
+	animation-delay: 10s;
+}
+
+.hero_content {
+	max-width: 350px;
+	display: inline-block;
+	text-shadow: 2px 2px 4px #000000;
+	margin: 50px 3px 50px 3px;
+}
+
+/* Fading animation */
+.fade {
+	animation-name: fade;
+	animation-duration: 2s;
+}
+
+@keyframes fade {
+	from {
+		opacity: 0.3;
+	}
+	to {
+		opacity: 1;
+	}
+}

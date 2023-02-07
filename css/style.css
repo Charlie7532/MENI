@@ -96,9 +96,6 @@ h6 {
 .text_shadow {
 	text-shadow: 2px 2px 4px #000000;
 }
-.text_shadow2 {
-	text-shadow: 2px 2px 4px #000000;
-}
 
 .eBlock {
 	position: relative;
@@ -315,21 +312,6 @@ img {
 .active,
 .dot:hover {
 	background-color: #fdf9ec;
-}
-
-/* Fading animation */
-.fade {
-	animation-name: fade;
-	animation-duration: 2s;
-}
-
-@keyframes fade {
-	from {
-		opacity: 0.3;
-	}
-	to {
-		opacity: 1;
-	}
 }
 
 /* On smaller screens, decrease text size */
