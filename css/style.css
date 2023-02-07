@@ -16,12 +16,20 @@
 * {
 	box-sizing: border-box;
 }
+html {
+	font-size: 16px;
+}
 body {
 	margin: 0;
 	background-color: #151a21;
 	font-family: Verdana, sans-serif;
 	font-family: NowAltFont;
-	font-size: 10px;
+	font-size: 16px;
+}
+@media only screen and (max-width: 600px) {
+	body {
+		font-size: 8px;
+	}
 }
 
 .center {
@@ -35,25 +43,35 @@ body {
 
 h1 {
 	font-family: NowAlt_Bold;
-	font-size: 3.5rem;
-	letter-spacing: 0.8rem;
-	color: #f2f2f2;
+	font-size: 3.5em;
+	letter-spacing: 0.2em;
+	color: #fdf9ec;
 	padding: 5px;
 	margin: 0;
 }
 
 h2 {
-	color: #151a21;
+	color: #f2f2f2;
 	text-align: center;
 }
 
-h3 {
+h3,
+h4 {
 	font-family: NowAlt_Light;
-	font-size: 2rem;
-	letter-spacing: 0.5rem;
+	font-size: 2em;
+	letter-spacing: 0.5em;
 	color: #f2f2f2;
 	padding: 10px;
 	margin: 0;
+}
+h4 {
+	color: #151a21;
+}
+
+h5 {
+	font-family: NowAltFont;
+	font-size: 1.5em;
+	letter-spacing: 0.5em;
 }
 
 p,
@@ -63,12 +81,52 @@ h6 {
 	color: #f2f2f2;
 }
 
+p {
+	font-size: 1rem;
+	color: black;
+}
+
+.dark {
+	color: #151a21;
+}
+
+.text_shadow {
+	text-shadow: 2px 2px 4px #000000;
+}
+
 .eBlock {
+	position: relative;
 	display: inline-block;
 	width: 100%;
 	padding: 10%;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.mybtn,
+.mybtn2 {
+	color: #151a21;
+	background-color: #fdf9ec;
+	border: 1px solid #fdf9ec;
+	padding: 10px 30px;
+	border-radius: 5px;
+	box-shadow: none;
+
+	margin: 5px;
+}
+
+.mybtn2 {
+	color: #fdf9ec;
+	background-color: transparent;
+}
+
+button:hover,
+.button2:hover {
+	background-color: #f2f2f250;
+}
+button:active,
+.button2:active {
+	background-color: #f2f2f250;
 }
 
 .sidenav {
@@ -267,11 +325,11 @@ img {
 }
 
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 500px) {
 	.prev,
 	.next,
 	.text {
-		font-size: 11px;
+		display: none;
 	}
 }
 
