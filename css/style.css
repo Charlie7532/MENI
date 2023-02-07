@@ -27,7 +27,6 @@ body {
 	font-size: 16px;
 }
 
-
 .center {
 	display: flex;
 	justify-content: center;
@@ -59,7 +58,7 @@ h3,
 h4 {
 	font-family: NowAlt_Light;
 	font-size: 2em;
-	letter-spacing: 0.5em;
+	letter-spacing: 0.1em;
 	color: #f2f2f2;
 	padding: 10px;
 	margin: 0;
@@ -69,7 +68,7 @@ h4 {
 }
 
 h5 {
-	font-family: NowAltFont;
+	font-family: NowAlt_Bold;
 	font-size: 1.5em;
 	letter-spacing: 0.5em;
 }
@@ -86,6 +85,10 @@ p {
 	color: black;
 }
 
+h6 {
+	line-height: 35px;
+}
+
 .dark {
 	color: #151a21;
 }
@@ -97,14 +100,14 @@ p {
 	text-shadow: 2px 2px 4px #000000;
 }
 
-
 .eBlock {
 	position: relative;
 	display: inline-block;
-	width: 100%;
-	padding: 10%;
 	margin-left: auto;
 	margin-right: auto;
+	width: 100%;
+	min-width: 100%;
+	padding: 10%;
 }
 
 .mybtn,
@@ -423,13 +426,14 @@ img {
 	body {
 		font-size: 8px;
 	}
-	.text_shadow{
+	.text_shadow {
 		font-size: 35px;
 	}
-	.mybtn, .mybtn2{
+	.mybtn,
+	.mybtn2 {
 		padding: 10px 15px;
 	}
-	.mybtn2{
+	.mybtn2 {
 		background-color: #151a21;
 	}
 }
