@@ -1,8 +1,8 @@
 /** @format */
 
 document.addEventListener('DOMContentLoaded', function () {
-	var elems = document.querySelectorAll('.sidenav');
-	M.Sidenav.init(elems, { edge: 'right' });
+    
+	M.Sidenav.init(document.querySelectorAll('.sidenav'), { edge: 'right' });
 	M.Carousel.init(document.querySelectorAll('.carousel'), {
 		fullWidth: true,
 		indicators: true,

@@ -219,14 +219,6 @@ button:active,
 	transform: translateY(-50%);
 }
 
-.img1 {
-	width: 100%;
-}
-.img2 {
-	width: 100%;
-	/* height: 100vh; */
-}
-
 /* @media screen and (max-width: 1200px){
 	.slideshow-container img {
 		width: 110;
