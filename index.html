@@ -193,6 +193,9 @@
 			document.addEventListener('DOMContentLoaded', function () {
 				var elems = document.querySelectorAll('.sidenav');
 				var instances = M.Sidenav.init(elems, { edge: 'right' });
+
+				setTimeout(showSlides, 3000);
+
 			});
 
 			document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
