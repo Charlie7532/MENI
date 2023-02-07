@@ -3,6 +3,11 @@
 document.addEventListener('DOMContentLoaded', function () {
 	var elems = document.querySelectorAll('.sidenav');
 	M.Sidenav.init(elems, { edge: 'right' });
+	M.Carousel.init(document.querySelectorAll('.carousel'), {
+		fullWidth: true,
+		indicators: true,
+        duration:200,
+	});
 
 	// setTimeout(showSlides, 3000);
 });

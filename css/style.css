@@ -182,10 +182,6 @@ button:active,
 	display: none;
 }
 
-img {
-	vertical-align: middle;
-}
-
 .vertical_center {
 	margin: 0;
 	position: absolute;
