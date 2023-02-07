@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	M.Carousel.init(document.querySelectorAll('.carousel'), {
 		fullWidth: true,
 		indicators: true,
-        duration:200,
+        duration:1,
 	});
 
 	// setTimeout(showSlides, 3000);
