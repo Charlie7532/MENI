@@ -4,12 +4,12 @@ document.addEventListener('DOMContentLoaded', function () {
 	var Baner = M.Carousel.init(document.querySelectorAll('.carousel'), {
 		fullWidth: true,
 		indicators: true,
-		duration: 1,
+		duration: 200,
 	});
 
-	setTimeout(() => {
-		Baner.next();
-	}, 3000);
+	// setTimeout(() => {
+	// 	Baner.next();
+	// }, 3000);
 });
 
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
