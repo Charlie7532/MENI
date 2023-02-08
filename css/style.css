@@ -27,7 +27,7 @@ body {
 	font-size: 16px;
 }
 
-.meni{
+.meni {
 	background-color: #151a21 !important;
 }
 
@@ -206,7 +206,7 @@ button:active,
 	/* height: fit-content; */
 	min-height: 100vh;
 	height: 100vh;
-	max-height:100vh;
+	max-height: 100vh;
 
 	position: relative;
 	margin: auto;
@@ -361,6 +361,18 @@ button:active,
 
 .header-right a {
 	letter-spacing: 0.15rem;
+}
+
+.ligth-section {
+	position: relative;
+	min-height: 250Px;
+	background-color: #fdf9ec;
+}
+
+.dark-section {
+	position: relative;
+	min-height: 250Px;
+	background-color: #151a21;
 }
 
 @media screen and (max-width: 992px) {
