@@ -19,16 +19,23 @@
 html {
 	font-size: 16px;
 }
+
+.meni_blue {
+	color: #151a21;
+}
+.meni_crema {
+	color: #fdf9ec;
+}
+.meni {
+	background-color: #151a21 !important;
+}
+
 body {
 	margin: 0;
 	background-color: #151a21;
 	font-family: Verdana, sans-serif;
 	font-family: NowAltFont;
 	font-size: 16px;
-}
-
-.meni {
-	background-color: #151a21 !important;
 }
 
 .center {
@@ -345,6 +352,10 @@ button:active,
 	font-weight: bold;
 }
 
+.logo{
+	height: 45px;
+}
+
 .header a:hover {
 	background-color: transparent;
 	color: #b5b4b3ff;
@@ -365,13 +376,13 @@ button:active,
 
 .ligth-section {
 	position: relative;
-	min-height: 250Px;
+	min-height: 250px;
 	background-color: #fdf9ec;
 }
 
 .dark-section {
 	position: relative;
-	min-height: 250Px;
+	min-height: 250px;
 	background-color: #151a21;
 }
 
