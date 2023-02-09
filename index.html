@@ -13,37 +13,13 @@
 		<link rel="stylesheet" href="css/preloader.css" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>MENI</title>
-		<script defer type="text/javascript" src="js/slideshow.js"></script>
-		<script defer type="text/javascript" src="js/materialize.min.js"></script>
-		<script defer type="text/javascript" src="js/app.js"></script>
 	</head>
 
 	<body>
-		<section name="PRELOADER">
-			<div id="Pre-loader"></div>
-			<script async>
-				window.addEventListener('load', () => {
-					setTimeout(() => {
-						document.getElementById('Pre-loader').style.display = 'none';
-
-						console.log('ELEMENT AFTER PRELOADER++++++++++++++++++++++');
-
-						setTimeout(() => {
-							console.log('ELEMENT AFTER PRELOADER');
-							// document.getElementById('Hero1').style.display = 'block';
-							document.getElementById('Hero1').classList.add('animate__fadeInDown');
-							// document.getElementById('T1-2').classList.add('animate__fadeIn');
-							// document.getElementById('T1-3').classList.add('animate__fadeIn');
-						}, 3000);
-					}, 3000);
-				});
-			</script>
-		</section>
-		
-		<section name="HEADER">
+		<preloader id="Pre-loader"> </preloader>
+		<header id="HEADER">
 			<div class="header">
-				<img type="button" class="logo" alt="Logo" href="#home" src="assets/pictures/Logo/LOGO_GRIS.png" style="height: 45px" />
-
+				<a href="#home"><img type="button" class="logo" alt="Logo" href="#" src="assets/pictures/Logo/LOGO_GRIS.png" /></a>
 				<div class="header-right">
 					<div class="hide-on-med-and-down">
 						<a class="active" href="#home">Home</a>
@@ -76,7 +52,7 @@
 					</div>
 				</div>
 			</ul>
-		</section>
+		</header>
 
 		<section id="home" name="BANER">
 			<div class="slideshow-container carousel carousel-slider">
@@ -195,32 +171,31 @@
 			</div>
 		</section>
 
-		<!-- <section id="Coffee_shop" class="ligth-section">
-		</section> -->
-
-		<!-- <section id="Contact_Us" class="dark-section" style="height: 300px;">
+		<section id="Coffee_shop" class="ligth-section hide" style="height: 300px">
 			<div class="continer vertical_center left-align eBlock">
-				<h1 class="hero3_Title">
-					ITS'S COFFEE TIME <br />
-					
-				</h1>
+				<h1 class="hero3_Title">ITS'S COFFEE TIME <br /></h1>
 				<div class="hero3_content left">
 					<div>
-						<h6 class="hero_content">
-							Join us on a journey to greatness and find your destiny in every cup.
-						</h6>
+						<h6 class="hero_content">Join us on a journey to greatness and find your destiny in every cup.</h6>
 					</div>
 					<div>
 						<a class="waves-effect waves-light mybtn pulse" style="background-color: #fdf9ec">SUBSCRIBE</a>
 					</div>
 				</div>
 			</div>
-		</section> -->
-
-		<!-- Create a contact form -->
-
-		<section id="Contact_Us" name="FOOTER" class="footer">
-			<img src="assets/pictures/Logo/LOGO CREMA_COMPLETO.png" style="height: 300px; padding: 50px; position: absolute; right: 0px" />
 		</section>
+
+		<section id="Contact_Us" class="footer"></section>
+
+		<footer id="footer" name="FOOTER" class="footer">
+			<img src="assets/pictures/Logo/LOGO CREMA_COMPLETO.png" style="height: 300px; padding: 50px; position: absolute; right: 0px" />
+		</footer>
 	</body>
+
+	<script defer type="text/javascript" src="js/slideshow.js"></script>
+	<script defer type="text/javascript" src="js/materialize.min.js"></script>
+	<script defer type="text/javascript" src="js/app.js"></script>
+	<script defer type="text/javascript" src="js/preloader.js"></script>
 </html>
+
+<h6>php?{ document.getElementById('sub_form').value}?</h6>
