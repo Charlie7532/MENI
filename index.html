@@ -26,11 +26,14 @@
 					setTimeout(() => {
 						document.getElementById('Pre-loader').style.display = 'none';
 
+						console.log('ELEMENT AFTER PRELOADER++++++++++++++++++++++');
+
 						setTimeout(() => {
-							document.getElementById('Hero1').style.display = 'block';
-							document.getElementById('Hero1').classList.add(' animate__fadeInDown');
-							document.getElementById('T1-2').classList.add('animate__fadeIn');
-							document.getElementById('T1-3').classList.add('animate__fadeIn');
+							console.log('ELEMENT AFTER PRELOADER');
+							// document.getElementById('Hero1').style.display = 'block';
+							document.getElementById('Hero1').classList.add('animate__fadeInDown');
+							// document.getElementById('T1-2').classList.add('animate__fadeIn');
+							// document.getElementById('T1-3').classList.add('animate__fadeIn');
 						}, 3000);
 					}, 3000);
 				});
@@ -80,10 +83,10 @@
 					<img src="assets/pictures/banners/BANNER 1.png" class="hide-on-small-only" />
 					<img src="assets/pictures/banners/phone/BANNER 1.png" class="hide-on-med-and-up" />
 
-					<div id="Hero1" class="continer vertical_center center-align eBlock animated infinite">
-						<h3 id="T1-2" class="hero1_SubTitle animated">Write your own destiny</h3>
+					<div id="Hero1" class="continer vertical_center center-align eBlock">
+						<h3 class="hero1_SubTitle">Write your own destiny</h3>
 						<h1 class="hero1_Title">IN THE NAME OF COFFEE</h1>
-						<div id="T1-3" class="animated">
+						<div>
 							<div class="hero1_content center">
 								<h6 style="max-width: 450px">Whenever you take a sip of Meni's elixir, remember that you're aligning yourself with the power of the <b>goddess of fate and destiny.</b></h6>
 							</div>
@@ -139,7 +142,7 @@
 		<section id="Our_elixir" class="ligth-section">
 			<dic class="container">
 				<div class="center-align" style="padding: 5%; font-size: 1rem">
-					<h5>YOUR DESTINY IN A CUP</h5>
+					<h5 class="animate__animated animate__fadeInDown">YOUR DESTINY IN A CUP</h5>
 					<h6 class="dark">Revolutionizing specialty coffee, one cup at a time.</h6>
 				</div>
 				<div class="row" style="font-size: 0.6rem; margin-bottom: 0">
