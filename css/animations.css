@@ -28,14 +28,15 @@
 	animation-duration: 2s;
 }
 
- /* .hero1_Title {  */
-	/* width: 100vw; */
-	/* display: block; */
+ .hero1_Title { 
+	width: 100%;
+	display: block;
+	right: 0;
 
 	/* animation-name: hero;
 	animation-duration: 4s;
     animation-delay: 10s; */
-/* }  */
+} 
 .hero2_Title,
 .hero3_Title {
 	text-shadow: 2px 2px 4px #000000;

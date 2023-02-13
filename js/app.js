@@ -1,12 +1,12 @@
 /** @format */
 document.addEventListener('DOMContentLoaded', function () {
 	let instance_Sidenav = M.Sidenav.init(document.querySelectorAll('.sidenav'), { edge: 'right' });
-	let instance = M.Carousel.init(document.querySelectorAll('.carousel'), {
-		fullWidth: true,
-		indicators: true,
-		duration: 500,
-		interval: 5000,
-	});
+	// let instance = M.Carousel.init(document.querySelectorAll('.carousel'), {
+	// 	fullWidth: true,
+	// 	indicators: true,
+	// 	duration: 500,
+	// 	interval: 5000,
+	// });
 
 
     var instances = M.Slider.init(document.querySelectorAll('.slider'), {
@@ -27,13 +27,11 @@ document.addEventListener('DOMContentLoaded', function () {
 	// });
 });
 
-// document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-// 	anchor.addEventListener('click', function (e) {
-// 		e.preventDefault();
-// 		document.querySelector(this.getAttribute('href')).scrollIntoView({
-// 			behavior: 'smooth',
-// 		});
-// 	});
-// });
-
-//create a contact\
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+	anchor.addEventListener('click', function (e) {
+		e.preventDefault();
+		document.querySelector(this.getAttribute('href')).scrollIntoView({
+			behavior: 'smooth',
+		});
+	});
+});
