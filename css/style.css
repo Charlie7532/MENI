@@ -368,6 +368,15 @@ button:active,
 
 .logo{
 	height: 45px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+.right-menu{
+	position: absolute;
+	top: 10px;
+	right: 10px;
 }
 
 .header a:hover {
