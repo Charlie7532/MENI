@@ -28,15 +28,15 @@
 	animation-duration: 2s;
 }
 
- .hero1_Title { 
-	width: 100%;
-	display: block;
-	right: 0;
+ /* .hero1_Title {  */
+	/* width: 100vw; */
+	/* display: block; */
+	/* right: 0; */
 
 	/* animation-name: hero;
 	animation-duration: 4s;
     animation-delay: 10s; */
-} 
+/* }  */
 .hero2_Title,
 .hero3_Title {
 	text-shadow: 2px 2px 4px #000000;
@@ -48,7 +48,7 @@
 .hero1_SubTitle,
 .hero2_SubTitle,
 .hero3_SubTitle {
-	padding-top: 18%;
+	padding-top: 16%;
 	/* animation-name: fade;
 	animation-duration: 2s;
 	animation-delay: 10s; */
@@ -61,6 +61,8 @@
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
+	padding-top: 3px;
+	padding-bottom: 3px;
 
 	/* animation-name: fade;
 	animation-duration: 2s;
