@@ -119,7 +119,8 @@ h6 {
 }
 
 .mybtn,
-.mybtn2{
+.mybtn2,
+.mybtn3 {
 	color: #151a21;
 	font-size: 1rem;
 	background-color: #fdf9ec;
@@ -133,6 +134,11 @@ h6 {
 .mybtn2 {
 	color: #fdf9ec;
 	background-color: transparent;
+}
+
+.mybtn3 {
+	color: #fdf9ec;
+	background-color: #151a21;
 }
 
 .mybtn:hover,
