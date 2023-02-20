@@ -8,23 +8,18 @@ document.addEventListener('DOMContentLoaded', function () {
 	// 	interval: 5000,
 	// });
 
+	var instances_Modal = M.Modal.init(document.querySelectorAll('.modal'), {
+		opacity: 0.5,
+		preventScrolling: true,
+		dismissible: true,
+	});
 
-    var instances = M.Slider.init(document.querySelectorAll('.slider'), {
+	var instances_Slider = M.Slider.init(document.querySelectorAll('.slider'), {
 		fullWidth: true,
 		indicators: true,
 		duration: 3000,
-		interval: 6000
+		interval: 6000,
 	});
-
-	// setTimeout(() => {
-	// 	var elem = document.querySelectorAll('.carousel');
-	// 	var instance = M.Carousel.getInstance(elem);
-	// 	instance.next();
-	// }, 3000);
-
-	// setInterval(()=>{
-
-	// });
 });
 
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {

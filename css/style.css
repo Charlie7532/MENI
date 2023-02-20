@@ -26,6 +26,9 @@ html {
 .meni_crema {
 	color: #fdf9ec;
 }
+.crema-background{
+	background-color: #fdf9ec;
+}
 .meni {
 	background-color: #151a21 !important;
 }
@@ -494,4 +497,10 @@ h6 {
 	left: 10%;
 	width: 80%;
 	opacity: 0;
+}
+.R25 {
+	border-radius: 25px;
+}
+.R10 {
+	border-radius: 10px;
 }
