@@ -17,8 +17,8 @@ document.addEventListener('DOMContentLoaded', function () {
 	M.Slider.init(document.querySelectorAll('.slider'), {
 		fullWidth: true,
 		indicators: true,
-		duration: 3000,
-		interval: 6000,
+		duration: 2500,
+		interval: 5000,
 	});
 });
 
