@@ -21,13 +21,13 @@ html {
 }
 
 .meni_blue {
-	color: #151a21;
+	color: #151a21 !important;
 }
 .meni_crema {
-	color: #fdf9ec;
+	color: #fdf9ec !important;
 }
 .crema-background{
-	background-color: #fdf9ec;
+	background-color: #fdf9ec !important;
 }
 .meni {
 	background-color: #151a21 !important;
@@ -498,9 +498,23 @@ h6 {
 	width: 80%;
 	opacity: 0;
 }
+
+label.active{
+	background-color: transparent;
+}
+
+
 .R25 {
 	border-radius: 25px;
 }
 .R10 {
 	border-radius: 10px;
 }
+.vl {
+	border-left: 1.5px solid grey;
+	height: 300px;
+	position: absolute;
+	left: 50%;
+	margin-left: -20px;
+	top: 50px;
+  }

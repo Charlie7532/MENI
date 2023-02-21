@@ -65,8 +65,8 @@
 						<div class="header header-right" style="position: relative">
 							<a class="active sidenav-close" href="#home">Home</a>
 							<a class="sidenav-close" href="#Our_Story">Our Story</a>
-							<!-- <a class="sidenav-close" href="#Coffee_shop">Coffee Shop</a>
-							<a class="sidenav-close" href="#Learn">Learn</a> -->
+							<a class="sidenav-close" href="#Coffee_shop">Coffee Shop</a>
+							<!-- <a class="sidenav-close" href="#Learn">Learn</a> -->
 							<a class="sidenav-close" href="#Contact_Us">Contact Us</a>
 						</div>
 					</div>
@@ -91,7 +91,7 @@
 											<h6>Whenever you take a sip of Meni's elixir, remember that you're aligning yourself with the power of the <b>goddess of fate and destiny.</b></h6>
 										</div>
 										<div class="col s12" style="margin-top: 10px">
-											<a href="https://www.amazon.com/dp/B0BSG7ZLBJ?ref=myi_il_dp" class="waves-effect waves-light mybtn">TRY COFFEE</a>
+											<a href="https://www.amazon.com/dp/B0BSG7ZLBJ?ref=myi_il_dp" target="_blank" rel="noopener noreferrer" class="waves-effect waves-light mybtn">TRY COFFEE</a>
 											<!-- <a href="#Our_Story" class="waves-effect waves-light mybtn">LEARN MORE</a> -->
 										</div>
 									</div>
@@ -113,7 +113,7 @@
 									<h6 class="hero_content">Meni is a celebration of the <b>finest coffee beans from the world over</b>, carefully selected and crafted to bring out their unique characteristics.</h6>
 								</div>
 								<div>
-									<a href="https://www.amazon.com/dp/B0BSG7ZLBJ?ref=myi_il_dp" class="waves-effect waves-light mybtn">TRY COFFEE</a>
+									<a href="https://www.amazon.com/dp/B0BSG7ZLBJ?ref=myi_il_dp" target="_blank" rel="noopener noreferrer" class="waves-effect waves-light mybtn">TRY COFFEE</a>
 									<a href="#Our_elixir" class="waves-effect waves-light mybtn2">READ MORE</a>
 								</div>
 							</div>
@@ -305,10 +305,9 @@
 		<section name="SUBSCRIBE_MODAL">
 			<div id="modal1" class="modal modal-fixed-footer R25 crema-background">
 				<form name="subscribe_Form" class="form">
-
-				<div class="modal-content">
-					<h4>We are currently working in develop our monthly delivery program.</h4>
-					<h6 class="dark">If you'd like more information and updates about this program please leave us your information.</h6>
+					<div class="modal-content">
+						<h4>We are currently working in develop our monthly delivery program.</h4>
+						<h6 class="dark">If you'd like more information and updates about this program please leave us your information.</h6>
 
 						<div class="row">
 							<div class="input-field col s12 m6">
@@ -335,12 +334,61 @@
 								<label for="Phone">Phone (Optional)</label>
 							</div>
 						</div>
-				</div>
-				<div class="modal-footer">
-					<button href="#!" type="submit" class="waves-effect waves-green btn-flat" name="action"><i class="right material-icons">send</i> SEND</button>
-				</div>
-			</form>
+					</div>
+					<div class="modal-footer">
+						<button href="#!" type="submit" class="waves-effect waves-green btn-flat" name="action"><i class="right material-icons">send</i> SEND</button>
+					</div>
+				</form>
+			</div>
+		</section>
 
+		<section name="CONTACT_MODAL">
+			<div id="modal2" class="modal modal-fixed-footer R25 meni">
+				<form name="contact_Form" class="form">
+					<div class="modal-content">
+						<div class="row">
+							<div class="col s12 m5">
+								<div class="row">
+									<h6 class="meni_crema">Contact information</h6>
+									<p style="color: grey;">We're open for any suggestion or <br> just to have a chat</p>
+									<br>
+									<a class="meni_crema"><i class="material-icons prefix meni_crema">place</i> Address: </a><b style="color: grey">Orlando, Fl 32829</b><br /><br />
+									<a class="meni_crema"><i class="material-icons prefix meni_crema">phone</i> Phone: </a><b style="color: grey">(407) 617 8200</b><br /><br />
+									<a class="meni_crema"><i class="material-icons prefix meni_crema">email</i> Email: </a><b style="color: grey">info@menicoffee.com</b><br /><br />
+								</div>
+							</div>
+							<div class="col s0 m1"> <div class="vl"></div></div>
+							<div class="col s12 m6">
+								<div class="row">
+									<!-- <h4 class="meni_crema">Write Us</h4> -->
+									<div class="input-field col s12 m6">
+										<input id="first_name" type="text" class="validate" required />
+										<label for="first_name">First Name</label>
+									</div>
+									<div class="input-field col s12 m6">
+										<input id="last_name" type="text" class="validate" required />
+										<label for="last_name">Last Name</label>
+									</div>
+									<div class="input-field col s12">
+										<input id="email" type="email" class="validate" required />
+										<label for="email">Email</label>
+									</div>
+									<div class="input-field col s12">
+										<input id="input_text" type="text" data-length="10" />
+										<label for="input_text">Subject</label>
+									</div>
+									<div class="input-field col s12">
+										<textarea id="textarea1" class="materialize-textarea" placeholder=""></textarea>
+										<label for="textarea1">Message</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer crema-background">
+						<button href="#!" type="submit" class="waves-effect waves-green btn-flat meni_blue" name="action"><i class="right material-icons meni_blue">send</i> SEND</button>
+					</div>
+				</form>
 			</div>
 		</section>
 
@@ -349,7 +397,18 @@
 				<div class="col s0 m8"></div>
 				<img src="assets/pictures/Logo/LOGO CREMA_COMPLETO.png" class="col s12 m4" style="max-height: 300px; padding: 10px" />
 			</div> -->
-			<img src="assets/pictures/Logo/LOGO CREMA_COMPLETO.png" style="height: 300px; padding: 50px; position: absolute; right: 0px" alt="MENI Coffee - High-Quality Coffee Products for Dreamers" />
+
+			<div class="row">
+				<div class="left-align col s12 m6" style="margin: 50px 0px 0px 50px">
+					<h6 style="padding: 0">Write your oun destiny</h6>
+					<h6 class="meni_crema">In the name of coffee</h6>
+
+					<a href="#modal2" class="waves-effect waves-light mybtn2 modal-trigger" style="margin: 0 0 0 0">CONTACT US</a>
+				</div>
+				<div class="col s12 m4">
+					<img src="assets/pictures/Logo/LOGO CREMA_COMPLETO.png" style="height: 300px; padding: 50px; position: absolute; right: 0px" alt="MENI Coffee - High-Quality Coffee Products for Dreamers" />
+				</div>
+			</div>
 		</footer>
 	</body>
 
