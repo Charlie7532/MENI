@@ -4,35 +4,36 @@
 <html>
 	<head>
 		<title>MENI Coffee - High-Quality Coffee Products for Dreamers</title>
+		<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+		<link rel="stylesheet" href="css/materialize.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/animations.css" />
+		<link rel="stylesheet" href="css/preloader.css" />
+		
 		<meta
 			name="description"
 			content="MENI Coffee offers high-quality coffee products for dreamers who believe in destiny. Our products are designed to help you wake up and make your dreams come true."
 		/>
 		<meta name="keywords" content="coffee, MENI, high-quality, dreamers, destiny, wake up" />
-
-		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-		<link rel="stylesheet" href="css/materialize.css" />
-		<link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="css/animations.css" />
-		<link rel="stylesheet" href="css/preloader.css" />
 		<link rel="icon" type="image/x-icon" href="/assets/pictures/Logo/favicon_2.png" />
-
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
 		<meta property="og:title" content="MENI Coffee - High-Quality Coffee Products for Dreamers" />
 		<meta
 			property="og:description"
 			content="MENI Coffee offers high-quality coffee products for dreamers who believe in destiny. Our products are designed to help you wake up and make your dreams come true... In the name of coffee."
 		/>
-
 		<meta property="og:image" content="/assets/pictures/Logo/LOGO 200x200.png" />
 		<meta property="og:image:type" content="image/png" />
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="https://www.menicoffee.com/" />
 
+
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
 	</head>
 
 	<body>
@@ -74,7 +75,7 @@
 			</ul>
 		</header>
 
-		<section id="home" name="BANER" style="min-height: 100vh">
+		<section id="home" name="BANER" style="min-height: 100vh !important">
 			<div class="slider fullscreen">
 				<ul class="slides">
 					<li>
@@ -140,13 +141,12 @@
 					</li>
 				</ul>
 			</div>
+			<a class="prev vertical_center" style="z-index: 900" onclick="M.Slider.getInstance(document.querySelector('.slider')).prev()"><i class="material-icons">arrow_back</i></a>
+			<a class="next vertical_center" style="z-index: 900" onclick="M.Slider.getInstance(document.querySelector('.slider')).next()"><i class="material-icons">arrow_forward</i></a>
 		</section>
-		<a class="prev vertical_center" style="z-index: 900" onclick="M.Slider.getInstance(document.querySelector('.slider')).prev()"><i class="material-icons">arrow_back</i></a>
-		<a class="next vertical_center" style="z-index: 900" onclick="M.Slider.getInstance(document.querySelector('.slider')).next()"><i class="material-icons">arrow_forward</i></a>
-
-		<div class="ligth-section hide-on-small-only"></div>
-
+		
 		<section id="Our_elixir" class="ligth-section">
+			<div class="ligth-section hide-on-small-only"></div>
 			<dic class="container">
 				<div class="center-align" style="padding: 5%; font-size: 1rem">
 					<h5 class="animate__animated animate__fadeInDown">YOUR DESTINY IN A CUP</h5>
@@ -182,9 +182,8 @@
 					</div>
 				</div>
 			</dic>
+			<div class="ligth-section hide-on-small-only"></div>
 		</section>
-
-		<div class="ligth-section hide-on-small-only"></div>
 
 		<section id="Our_Story">
 			<div class="parallax-container" , style="min-height: 80svh">
@@ -201,8 +200,8 @@
 			</div>
 		</section>
 
-		<div class="ligth-section hide-on-small-only"></div>
 		<section id="Coffee_shop" class="ligth-section">
+			<div class="ligth-section hide-on-small-only"></div>
 			<div class="center-align" style="padding: 5%; font-size: 1rem">
 				<h5 class="animate__animated animate__fadeInDown">ENJOY SPECIALTY FRESH COFFEE</h5>
 				<h6 class="dark">Find indpiration in every cup</h6>
@@ -297,10 +296,9 @@
 						</div>
 					</div>
 				</div>
-	
 			</div>
+			<div class="ligth-section hide-on-small-only"></div>
 		</section>
-		<div class="ligth-section hide-on-small-only"></div>
 
 		<section id="Contact_Us"></section>
 
@@ -417,14 +415,15 @@
 			</div> -->
 
 			<div class="row">
-				<div class="left-align col s12 m6" style="margin: 50px 0px 0px 50px">
+				<div class="left-align col s12 m6">
 					<h5 class="meni_crema" style="padding: 0">Write your oun destiny</h5>
 					<h6 class="meni_crema">In the name of coffee</h6>
 
 					<a href="#modal2" class="waves-effect waves-light mybtn2 modal-trigger" style="margin: 0 0 0 0">CONTACT US</a>
 				</div>
 				<div class="col s12 m4">
-					<img src="assets/pictures/Logo/LOGO CREMA_COMPLETO.png" style="height: 300px; padding: 50px; position: absolute; right: 0px" alt="MENI Coffee - High-Quality Coffee Products for Dreamers" />
+					<img src="assets/pictures/Logo/LOGO CREMA_COMPLETO.png" class="hide-on-small-only" style="height: 300px; padding: 50px; position: absolute; right: 0px" alt="MENI Coffee - High-Quality Coffee Products for Dreamers" />
+					<img src="assets/pictures/Logo/LOGO CREMA_COMPLETO.png" class="hide-on-med-and-up" style="height: 300px; padding: 50px;" alt="MENI Coffee - High-Quality Coffee Products for Dreamers" />
 				</div>
 			</div>
 		</footer>
