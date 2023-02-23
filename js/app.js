@@ -22,6 +22,10 @@ document.addEventListener('DOMContentLoaded', function () {
 	});
 });
 
+$(document).ready(function () {
+	$('input#input_text, textarea#textarea2').characterCounter();
+});
+
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 	anchor.addEventListener('click', function (e) {
 		e.preventDefault();
