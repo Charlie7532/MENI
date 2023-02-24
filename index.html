@@ -10,7 +10,7 @@
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/animations.css" />
 		<link rel="stylesheet" href="css/preloader.css" />
-		
+
 		<meta
 			name="description"
 			content="MENI Coffee offers high-quality coffee products for dreamers who believe in destiny. Our products are designed to help you wake up and make your dreams come true."
@@ -28,12 +28,9 @@
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="https://www.menicoffee.com/" />
 
-
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-
 	</head>
 
 	<body>
@@ -144,7 +141,7 @@
 			<a class="prev vertical_center" style="z-index: 900" onclick="M.Slider.getInstance(document.querySelector('.slider')).prev()"><i class="material-icons">arrow_back</i></a>
 			<a class="next vertical_center" style="z-index: 900" onclick="M.Slider.getInstance(document.querySelector('.slider')).next()"><i class="material-icons">arrow_forward</i></a>
 		</section>
-		
+
 		<section id="Our_elixir" class="ligth-section">
 			<div class="ligth-section hide-on-small-only"></div>
 			<dic class="container">
@@ -304,8 +301,10 @@
 
 		<section name="SUBSCRIBE_MODAL">
 			<div id="modal1" class="modal modal-fixed-footer R25 crema-background">
+				<h5 class="modal-close meni_blue">&#10005;</h5>
 				<form name="subscribe_Form" class="form">
 					<div class="modal-content">
+						<br><br class="hide-on-small-only">
 						<h4>We are currently working in develop our monthly delivery program.</h4>
 						<h6 class="dark">If you'd like more information and updates about this program please leave us your information.</h6>
 
@@ -344,10 +343,11 @@
 
 		<section name="CONTACT_MODAL">
 			<div id="modal2" class="modal modal-fixed-footer R25 meni">
+				<h5 class="modal-close meni_crema">&#10005;</h5>
 				<form name="contact_Form" class="form">
 					<div class="modal-content">
 						<div class="row" style="margin: 0px">
-							<div class="col s12 m5">
+							<div class="col s12 m5 hide-on-small-only">
 								<div class="row">
 									<h6 class="meni_crema col s12 P0">Contact information</h6>
 									<p class="col s12 P0" style="color: grey; padding: 0%">
@@ -399,6 +399,30 @@
 									</div>
 								</div>
 							</div>
+
+							<div class="center-align col s12 m5 hide-on-med-and-up">
+								<div class="row">
+									<h6 class="meni_crema col s12 P0">Contact information</h6>
+									<p class="col s12 P0" style="color: grey; padding: 0%">We're open for any suggestion or just to have a chat</p>
+									<br />
+									<div class="row">
+										<h6 class="meni_crema col s12 m5 P0"><i class="material-icons prefix meni_crema">place</i> Address:</h6>
+										<p class="col s12 m7 P0" style="color: grey">Orlando, Fl 32829</p>
+										<br /><br class="hide-on-small-only" />
+									</div>
+
+									<div class="row">
+										<h6 class="meni_crema col s12 m5 P0"><i class="material-icons prefix meni_crema">phone</i> Phone:</h6>
+										<p class="col s12 m7 P0" style="color: grey; padding: 0%">(407) 617 8200</p>
+										<br /><br class="hide-on-small-only" />
+									</div>
+									<div class="row">
+										<h6 class="meni_crema col s12 m5 P0"><i class="material-icons prefix meni_crema">email</i> Email:</h6>
+										<p class="col s12 m7 P0" style="color: grey; padding: 0%">info@menicoffee.com</p>
+										<br /><br class="hide-on-small-only" />
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div class="modal-footer crema-background">
@@ -406,6 +430,10 @@
 					</div>
 				</form>
 			</div>
+		</section>
+
+		<section name="THANKS_MODAL">
+			<div id="modal3" class="modal modal-fixed-footer R25 meni"></div>
 		</section>
 
 		<footer id="footer" name="FOOTER" class="footer">
@@ -422,8 +450,13 @@
 					<a href="#modal2" class="waves-effect waves-light mybtn2 modal-trigger" style="margin: 0 0 0 0">CONTACT US</a>
 				</div>
 				<div class="col s12 m4">
-					<img src="assets/pictures/Logo/LOGO CREMA_COMPLETO.png" class="hide-on-small-only" style="height: 300px; padding: 50px; position: absolute; right: 0px" alt="MENI Coffee - High-Quality Coffee Products for Dreamers" />
-					<img src="assets/pictures/Logo/LOGO CREMA_COMPLETO.png" class="hide-on-med-and-up" style="height: 300px; padding: 50px;" alt="MENI Coffee - High-Quality Coffee Products for Dreamers" />
+					<img
+						src="assets/pictures/Logo/LOGO CREMA_COMPLETO.png"
+						class="hide-on-small-only"
+						style="height: 300px; padding: 50px; position: absolute; right: 0px"
+						alt="MENI Coffee - High-Quality Coffee Products for Dreamers"
+					/>
+					<img src="assets/pictures/Logo/LOGO CREMA_COMPLETO.png" class="hide-on-med-and-up" style="height: 300px; padding: 50px" alt="MENI Coffee - High-Quality Coffee Products for Dreamers" />
 				</div>
 			</div>
 		</footer>
