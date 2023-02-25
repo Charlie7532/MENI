@@ -1,4 +1,12 @@
 /** @format */
+
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        document.getElementById('Pre-loader').style.display = 'none';
+    }, 3000);
+});
+
+
 document.addEventListener('DOMContentLoaded', function () {
 	M.Sidenav.init(document.querySelectorAll('.sidenav'), { edge: 'right' });
 	// let instance = M.Carousel.init(document.querySelectorAll('.carousel'), {

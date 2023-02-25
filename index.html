@@ -4,9 +4,10 @@
 <html>
 	<head>
 		<title>MENI Coffee - High-Quality Coffee Products for Dreamers</title>
-		<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-		<link rel="stylesheet" href="css/materialize.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+		<!-- <link rel="stylesheet" href="css/materialize.css" /> -->
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/animations.css" />
 		<link rel="stylesheet" href="css/preloader.css" />
@@ -34,7 +35,25 @@
 	</head>
 
 	<body>
-		<preloader id="Pre-loader"> </preloader>
+		<!-- <preloader id="Pre-loader"></preloader> -->
+		<preloader id="Pre-loader">
+			<div id="loadder" class="loadderBack">
+				<div class="preloader-wrapper big active center-block center loadder">
+					<div class="modal-content spinner-layer spinner-blue-only">
+						<div class="circle-clipper left">
+							<div class="circle"></div>
+						</div>
+						<div class="gap-patch">
+							<div class="circle"></div>
+						</div>
+						<div class="circle-clipper right">
+							<div class="circle"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</preloader>
+
 		<header id="HEADER">
 			<div class="header">
 				<a href="#home"><img type="button" class="logo" alt="MENI Coffee Logo" href="#" src="assets/pictures/Logo/Logo_h94px.png" /></a>
@@ -304,7 +323,7 @@
 				<h5 class="modal-close meni_blue">&#10005;</h5>
 				<form name="subscribe_Form" class="form">
 					<div class="modal-content">
-						<br><br class="hide-on-small-only">
+						<br /><br class="hide-on-small-only" />
 						<h4>We are currently working in develop our monthly delivery program.</h4>
 						<h6 class="dark">If you'd like more information and updates about this program please leave us your information.</h6>
 
@@ -347,7 +366,7 @@
 				<form name="contact_Form" class="form">
 					<div class="modal-content">
 						<div class="row" style="margin: 0px">
-							<div class="col s12 m5 hide-on-small-only">
+							<div class="col s12 m5 hide-on-small-only ">
 								<div class="row">
 									<h6 class="meni_crema col s12 P0">Contact information</h6>
 									<p class="col s12 P0" style="color: grey; padding: 0%">
@@ -377,11 +396,11 @@
 							<div class="col s12 m6">
 								<div class="row">
 									<h6 class="meni_crema">Get in touch with us</h6>
-									<div class="input-field col s12 m6">
-										<input id="first_name2" type="text" class="validate meni_crema" required />
+									<div class="input-field col s12 m12 l6">
+										<input id="contact_Form" type="text" class="validate meni_crema" required />
 										<label for="first_name2">First Name</label>
 									</div>
-									<div class="input-field col s12 m6">
+									<div class="input-field col s12 m12 l6">
 										<input id="last_name2" type="text" class="validate meni_crema" required />
 										<label for="last_name2">Last Name</label>
 									</div>
@@ -390,12 +409,12 @@
 										<label for="email2">Email</label>
 									</div>
 									<div class="input-field col s12">
-										<input id="input_text" type="text" class="validate meni_crema" data-length="30" required />
-										<label for="input_text">Subject</label>
+										<input id="subject" type="text" class="validate meni_crema" data-length="30" required />
+										<label for="subject">Subject</label>
 									</div>
 									<div class="input-field col s12">
-										<textarea id="textarea1" class="materialize-textarea meni_crema" placeholder="" required></textarea>
-										<label for="textarea1">Message</label>
+										<textarea id="message" class="materialize-textarea meni_crema" placeholder="" required></textarea>
+										<label for="message">Message</label>
 									</div>
 								</div>
 							</div>
@@ -462,9 +481,11 @@
 		</footer>
 	</body>
 
-	<script defer type="text/javascript" src="js/slideshow.js"></script>
-	<script defer type="text/javascript" src="js/materialize.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+	<!-- <script defer type="text/javascript" src="js/materialize.min.js"></script> -->
+
 	<script defer type="text/javascript" src="js/app.js"></script>
-	<script defer type="text/javascript" src="js/preloader.js"></script>
 	<script defer type="text/javascript" src="js/subscribe.js"></script>
+	<!-- <script defer type="text/javascript" src="js/slideshow.js"></script> -->
 </html>
