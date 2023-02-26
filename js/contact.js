@@ -47,7 +47,7 @@ subscribe_Form.addEventListener('submit', (e) => {
 
 	setTimeout(() => {
 		M.Modal.getInstance(document.getElementById('thanks_modal')).open();
-	}, 3000);
+	}, 2000);
 
 	document.getElementById('first_name').value = '';
 	document.getElementById('last_name').value = '';
@@ -60,10 +60,10 @@ contact_Form.addEventListener('submit', (e) => {
 	console.log('==========CONTACT FORM HAS BEAN SUBMITED==========');
 	send2();
 	M.Modal.getInstance(document.getElementById('contact_modal')).close();
-	
+
 	setTimeout(() => {
 		M.Modal.getInstance(document.getElementById('thanks_modal')).open();
-	}, 3000);
+	}, 2000);
 
 	document.getElementById('first_name2').value = '';
 	document.getElementById('last_name2').value = '';
