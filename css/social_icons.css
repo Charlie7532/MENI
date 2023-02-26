@@ -16,13 +16,12 @@
 
 .fa-facebook {
 	/* background: #3b5998; */
-    background: transparent;
-	color: white;
+    background: #151a21 !important;
+	color: #fdf9ec !important;
 }
 
 .fa-twitter {
-	/* background: #55acee; */
-    background: transparent;
+	background: #55acee;
 	color: white;
 }
 
@@ -43,8 +42,8 @@
 
 .fa-instagram {
 	/* background: #125688; */
-    background: transparent;
-	color: white;
+    background: #151a21 !important;
+	color: #fdf9ec !important;
 }
 
 .fa-pinterest {
