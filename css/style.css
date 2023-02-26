@@ -542,8 +542,7 @@ label.active {
 	top: 50px;
 }
 
-
-.P0{
+.P0 {
 	padding: 0rem !important;
 	padding-left: 0px !important;
 	padding-right: 0px !important;
@@ -557,7 +556,6 @@ label.active {
 	margin: 10px;
 }
 
-
 .loadderBack {
 	background: #151a21 !important;
 	position: fixed;
@@ -570,10 +568,30 @@ label.active {
 	/* transition: all 0.5s ease; */
 }
 
-.loadder{
+.loadder {
 	background: transparent !important;
 	/* position: absolute; */
 	z-index: 999;
-	top:50%;
+	top: 50%;
 	padding: auto;
+}
+
+
+textarea.text-box {
+	padding-left: 10px !important;
+	padding-right: 10px !important;
+	border: 1px solid gray;
+	border-radius: 10px;
+	min-width: 100% !important;
+	max-width: 100% !important;
+	min-height: 100px;
+	height: 200px;
+}
+
+label.box {
+	width: fit-content !important;
+	background-color: #151a21 !important;
+	border-radius: 15px;
+	padding: 0px 10px;
+	margin-left: 5px;
 }
