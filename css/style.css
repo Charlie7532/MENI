@@ -26,6 +26,14 @@ html {
 .meni_crema {
 	color: #fdf9ec !important;
 }
+.meni_crema.text-lighten-2{
+	color: #fdf9ec80 !important;
+}
+.meni_crema.text-lighten-3{
+	color: #fdf9ec50 !important;
+}
+
+
 .crema-background {
 	background-color: #fdf9ec !important;
 }
@@ -101,6 +109,11 @@ p {
 
 h6 {
 	line-height: 35px;
+}
+
+.bold{
+	font-family: NowAlt_Bold;
+	padding-left: 0px; margin: 0px
 }
 
 .dark {
