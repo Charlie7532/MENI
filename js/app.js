@@ -1,4 +1,5 @@
 /** @format */
+let test=0;
 
 window.addEventListener('load', () => {
     setTimeout(() => {
