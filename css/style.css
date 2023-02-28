@@ -161,12 +161,15 @@ h6 {
 .mybtn:hover,
 .mybtn2:hover {
 	color: #fdf9ec;
-	background-color: #f2f2f230;
+	background-color: #151a2120;
 }
 
+.mybtn3:hover{
+	color: #fdf9ec;
+	background-color: #fdf9ec20;	
+}
 .mybtn4:hover {
-	color: #151a2190;	
-	background-color: transparent;	
+	color: #151a2180;	
 }
 
 
