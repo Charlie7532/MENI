@@ -136,7 +136,8 @@ h6 {
 
 .mybtn,
 .mybtn2,
-.mybtn3 {
+.mybtn3, 
+.mybtn4 {
 	color: #151a21;
 	font-size: 1rem;
 	background-color: #fdf9ec;
@@ -162,6 +163,13 @@ h6 {
 	color: #fdf9ec;
 	background-color: #f2f2f230;
 }
+
+.mybtn4:hover {
+	color: #151a2190;	
+	background-color: transparent;	
+}
+
+
 
 .mybtn:active,
 .mybtn2:active {
