@@ -55,7 +55,13 @@
 				</div>
 			</div>
 		</preloader>
-
+		<script>
+			window.addEventListener('load', () => {
+				setTimeout(() => {
+					document.getElementById('Pre-loader').style.display = 'none';
+				}, 3000);
+			});
+		</script>
 
 		<header id="HEADER">
 			<div class="header">
@@ -96,9 +102,9 @@
 		<section id="home" name="BANER" style="min-height: 100vh !important">
 			<div class="slider fullscreen">
 				<ul class="slides">
-					<li name="baner_1" >
-						<img src="assets/pictures/banners/BANNER 1.png"  class="hide-on-small-only" alt="MENI Coffee - Moon phases Banner">
-						<img src="assets/pictures/banners/phone/BANNER 1.png"  class="hide-on-med-and-up" alt="MENI Coffee - Moon phases Banner"/>
+					<li name="baner_1">
+						<img src="assets/pictures/banners/BANNER 1.png" class="hide-on-small-only" alt="MENI Coffee - Moon phases Banner" />
+						<img src="assets/pictures/banners/phone/BANNER 1.png" class="hide-on-med-and-up" alt="MENI Coffee - Moon phases Banner" />
 
 						<div class="caption center-align">
 							<h3 class="hero1_SubTitle">Write your own destiny</h3>

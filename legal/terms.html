@@ -37,24 +37,10 @@
 	</head>
 
 	<body>
-		<!-- <preloader id="Pre-loader"></preloader> -->
-		<preloader id="Pre-loader">
-			<div id="loadder" class="loadderBack">
-				<div class="preloader-wrapper big active center-block center loadder">
-					<div class="modal-content spinner-layer spinner-blue-only">
-						<div class="circle-clipper left">
-							<div class="circle"></div>
-						</div>
-						<div class="gap-patch">
-							<div class="circle"></div>
-						</div>
-						<div class="circle-clipper right">
-							<div class="circle"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</preloader>
+		<preloader id="Pre-loader"></preloader>
+		<script>
+			window.addEventListener('load', () => {document.getElementById('Pre-loader').style.display = 'none';});
+		</script>
 
 		<header id="HEADER">
 			<div class="header">
@@ -77,8 +63,8 @@
 				<div class="center-align" style="width: 100%; position: relative; align-content: center">
 					<!-- <img src="assets/pictures/Logo/LOGO AZUL.png" style="width: 100%; padding: 20px; display: block; align-content: center" /> -->
 					<div style="position: relative; display: inline-block">
-						<img src="assets/pictures/Logo/M.png" style="width: 50%; padding: 20px" alt="MENI Coffee - Moon Phases Banner" />
-						<img src="assets/pictures/Logo/LÍNEA.png" style="width: 100%" alt="MENI Coffee - Moon Phases Banner" />
+						<img src="https://main.menicoffee.com/assets/pictures/Logo/M.png" style="width: 50%; padding: 20px" alt="MENI Coffee - Moon Phases Banner" />
+						<img src="https://main.menicoffee.com/assets/pictures/Logo/LÍNEA.png" style="width: 100%" alt="MENI Coffee - Moon Phases Banner" />
 					</div>
 					<div style="position: relative; display: inline-block">
 						<div class="header header-right" style="position: relative">
