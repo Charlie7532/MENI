@@ -62,29 +62,33 @@ h1 {
 	font-family: NowAlt_Bold;
 	font-size: 3.5em;
 	letter-spacing: 0.2em;
-	color: #fdf9ec;
-	padding: 5px;
-	margin: 0;
+	padding: 5px 0;
+	margin: 0 0 0.5em;
 }
 
 h2 {
 	font-family: NowAlt_Bold;
-	font-size:2em;
-	letter-spacing: 0.2em;
-	color: #151a21 ;
-	padding: 5px;
-	margin: 0;
+	font-size: 2em;
+	color: #151a21;
+	margin: 3px 0;
 }
 
 h3,
-h4 {
+h4,
+h6,
+p {
 	font-family: NowAlt_Light;
+	font-size: 1.2rem;
+	color: #151a21;
+}
+
+.caption h3 {
 	font-size: 2em;
 	letter-spacing: 0.1em;
 	color: #f2f2f2;
 	padding: 10px;
-	margin: 0;
 }
+
 h4 {
 	color: #151a21;
 }
@@ -93,13 +97,6 @@ h5 {
 	font-family: NowAlt_Bold;
 	font-size: 1.5em;
 	letter-spacing: 0.5em;
-}
-
-p,
-h6 {
-	font-family: NowAlt_Light;
-	font-size: 1.2rem;
-	color: #f2f2f2;
 }
 
 p {
