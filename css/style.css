@@ -83,11 +83,16 @@ p {
 	color: #151a21;
 }
 
-.caption h3 {
+
+.caption h1{
+	color: #f2f2f2;
+}
+.caption h2 {
+	font-family: NowAlt_Light;
 	font-size: 2em;
 	letter-spacing: 0.1em;
 	color: #f2f2f2;
-	padding: 10px;
+	padding-top: 20%;
 }
 
 h4 {
