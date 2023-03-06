@@ -26,13 +26,12 @@ html {
 .meni_crema {
 	color: #fdf9ec !important;
 }
-.meni_crema.text-lighten-2{
+.meni_crema.text-lighten-2 {
 	color: #fdf9ec80 !important;
 }
-.meni_crema.text-lighten-3{
+.meni_crema.text-lighten-3 {
 	color: #fdf9ec50 !important;
 }
-
 
 .crema-background {
 	background-color: #fdf9ec !important;
@@ -60,7 +59,7 @@ body {
 
 h1 {
 	font-family: NowAlt_Bold;
-	font-size: 3.5em;
+	font-size: 2em;
 	color: #151a21;
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
@@ -70,7 +69,7 @@ h1 {
 
 h2 {
 	font-family: NowAlt_Bold;
-	font-size: 2em;
+	font-size: 1.5em;
 	color: #151a21;
 	margin: 3px 0;
 }
@@ -80,12 +79,12 @@ h4,
 h6,
 p {
 	font-family: NowAlt_Light;
-	font-size: 1.2rem;
+	font-size: 1.3rem;
 	color: #151a21;
 }
 
-
-.caption h1{
+.caption h1 {
+	font-size: 3.5em;
 	color: #f2f2f2;
 }
 .caption h2 {
@@ -115,9 +114,10 @@ h6 {
 	line-height: 35px;
 }
 
-.bold{
+.bold {
 	font-family: NowAlt_Bold;
-	padding-left: 0px; margin: 0px
+	padding-left: 0px;
+	margin: 0px;
 }
 
 .dark {
@@ -140,7 +140,7 @@ h6 {
 
 .mybtn,
 .mybtn2,
-.mybtn3, 
+.mybtn3,
 .mybtn4 {
 	color: #151a21;
 	font-size: 1rem;
@@ -168,15 +168,13 @@ h6 {
 	background-color: #151a2120;
 }
 
-.mybtn3:hover{
+.mybtn3:hover {
 	color: #fdf9ec;
-	background-color: #fdf9ec20;	
+	background-color: #fdf9ec20;
 }
 .mybtn4:hover {
-	color: #151a2180;	
+	color: #151a2180;
 }
-
-
 
 .mybtn:active,
 .mybtn2:active {
@@ -484,10 +482,10 @@ h6 {
 }
 
 @media only screen and (max-width: 600px) {
-	.caption h1{
+	.caption h1 {
 		font-size: 30px;
 	}
-	.caption h2{
+	.caption h2 {
 		font-size: 20px;
 	}
 	.text_shadow {
@@ -606,7 +604,6 @@ label.active {
 	top: 50%;
 	padding: auto;
 }
-
 
 textarea.text-box {
 	padding-left: 10px !important;
