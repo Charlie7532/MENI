@@ -376,6 +376,7 @@ h6 {
 }
 
 .header {
+	transition: background-color 0.3s ease;
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -402,7 +403,6 @@ h6 {
 	font-size: 25px;
 	font-weight: bold;
 }
-
 .logo {
 	height: 45px;
 	position: absolute;

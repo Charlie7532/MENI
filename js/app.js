@@ -1,5 +1,5 @@
 /** @format */
-let test=0;
+let test = 0;
 
 document.addEventListener('DOMContentLoaded', function () {
 	M.Sidenav.init(document.querySelectorAll('.sidenav'), { edge: 'right' });
@@ -36,3 +36,15 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 		});
 	});
 });
+
+var scrollTrigger = 500;
+
+window.onscroll = function () {
+	var className = 'meni';
+	// We add pageYOffset for compatibility with IE.
+	if (window.scrollY >= scrollTrigger || window.pageYOffset >= scrollTrigger) {
+		document.getElementById('header_top').classList.add(className);
+	} else {
+		document.getElementById('header_top').classList.remove(className);
+	}
+};
