@@ -484,8 +484,11 @@ h6 {
 }
 
 @media only screen and (max-width: 600px) {
-	body {
-		font-size: 8px;
+	.caption h1{
+		font-size: 30px;
+	}
+	.caption h2{
+		font-size: 20px;
 	}
 	.text_shadow {
 		font-size: 35px;
