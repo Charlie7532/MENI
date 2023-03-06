@@ -37,7 +37,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 	});
 });
 
-var scrollTrigger = 500;
+var scrollTrigger = 10;
 
 window.onscroll = function () {
 	var className = 'meni';
