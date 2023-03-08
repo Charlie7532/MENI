@@ -410,6 +410,17 @@ h6 {
 	top: 10px;
 	left: 10px;
 }
+.menu a {
+	color: #b5b4b380;
+}
+
+.menu a:hover {
+	color: #b5b4b3ff;
+}
+.LineH {
+	border-bottom: #fdf9ec solid 1px;
+	max-width: 150px;
+}
 
 .right-menu {
 	position: absolute;
