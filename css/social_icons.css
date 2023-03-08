@@ -20,6 +20,13 @@
 	color: #fdf9ec !important;
 }
 
+.fa-instagram {
+	/* background: #125688; */
+    background: #151a21 !important;
+	color: #fdf9ec !important;
+}
+
+
 .fa-twitter {
 	background: #55acee;
 	color: white;
@@ -40,11 +47,6 @@
 	color: white;
 }
 
-.fa-instagram {
-	/* background: #125688; */
-    background: #151a21 !important;
-	color: #fdf9ec !important;
-}
 
 .fa-pinterest {
 	background: #cb2027;
