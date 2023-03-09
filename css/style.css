@@ -290,22 +290,6 @@ h6 {
 } */
 
 /* Next & previous buttons */
-.prev,
-.next {
-	cursor: pointer;
-	position: absolute;
-	top: 50%;
-	width: auto;
-	padding: 5px;
-	color: #151a21;
-	background-color: #fdf9ec80;
-	font-weight: bold;
-	font-size: 0px;
-	margin: 10px;
-	transition: 0.6s ease;
-	border-radius: 50%;
-	user-select: none;
-}
 
 /* Position the "next button" to the right */
 .next {
