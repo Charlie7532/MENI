@@ -4,15 +4,12 @@
 <html lang="en">
 	<head>
 		<title>MENI Coffee - High-Quality Coffee Products for Dreamers</title>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
-		<!-- <link rel="stylesheet" href="css/materialize.css" /> -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/css/brands.min.css" />		
+		<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 		<link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="css/animations.css" />
-		<link rel="stylesheet" href="css/preloader.css" />
-		<link rel="stylesheet" href="css/social_icons.css" />
 
 		<meta
 			name="description"
@@ -83,17 +80,46 @@
 			<div id="slide-out" class="sidenav hide-on-large-only">
 				<div class="center-align" style="width: 100%; position: relative; align-content: center">
 					<div style="position: relative; display: inline-block">
-						<img src="assets/pictures/Logo/M.png" style="width: 50%; padding: 20px" alt="MENI Coffee - Moon Phases Banner" />
+						<img src="assets/pictures/Logo/M.png" style="width: 50%; padding: 20px 30px" alt="MENI Coffee - Moon Phases Banner" />
 						<img src="assets/pictures/Logo/LÍNEA.png" style="width: 100%" alt="MENI Coffee - Moon Phases Banner" />
 					</div>
-					<div style="position: relative; display: inline-block">
-						<ul class="header header-right" style="position: relative">
+					<style>
+						.sidenav {
+							background-color: #fdf9ec;
+							height: 100vh;
+							max-width: 300px;
+							width: 80%;
+							border-radius: 25px 0 0 25px;
+						}
+						#menu-main.menu a {
+							font-size: 20px;
+							margin: 15px 0;
+							border-bottom: grey solid 1px;
+						}
+						#menu-main.menu a:hover {
+							background-color: #151a21;
+							color: #fdf9ec;
+							font-size: 25px;
+							margin: 15px 0;
+							border-bottom: grey solid 1px;
+							transition: 0.5s;
+						}
+					</style>
+					<div style="position: relative; display: inline-block; width: 90%">
+						<ul id="menu-main" class="menu">
 							<li><a class="sidenav-close" href="https://menicoffee.com">Home</a></li>
 							<li><a class="sidenav-close" href="https://menicoffee.com/index.php/our-story">Our Story</a></li>
 							<li><a class="sidenav-close" href="https://menicoffee.com/index.php/coffee-shop">Coffee Shop</a></li>
 							<li><a class="sidenav-close" href="https://menicoffee.com/index.php/blog">Blog</a></li>
 							<li><a class="sidenav-close" href="https://menicoffee.com/index.php/contact-us">Contact Us</a></li>
 						</ul>
+					</div>
+					<div style="position: relative; display: inline-block">
+						<br />
+						<h6 class="meni_blue"><b>Let's connect!</b></h6>
+						<a href="https://www.facebook.com/Meni-Coffee-111552181883666/" class="fa fa-facebook" target="_blank" rel="noopener noreferrer"></a>
+						<a href="https://www.instagram.com/menicoffee/" class="fa fa-instagram" target="_blank" rel="noopener noreferrer"></a>
+						<h3 class="center-align">In the name of coffee</h3>
 					</div>
 				</div>
 			</div>
@@ -103,7 +129,7 @@
 			<div class="slider fullscreen">
 				<ul class="slides">
 					<li name="baner_1">
-						<img src="https://menicoffee.com/wp-content/uploads/2023/03/meni_baner_1.webp"  class="hide-on-small-only" alt="MENI Coffee - Moon phases Banner" />
+						<img src="https://menicoffee.com/wp-content/uploads/2023/03/meni_baner_1.webp" class="hide-on-small-only" alt="MENI Coffee - Moon phases Banner" />
 						<img src="https://menicoffee.com/wp-content/uploads/2023/03/meni_baner_1_M.png" class="hide-on-med-and-up" alt="MENI Coffee - Moon phases Banner" />
 						<!-- <picture>
 							<source media="(min-width:650px)" srcset="assets/pictures/banners/meni_baner_1.png"/>
@@ -137,7 +163,7 @@
 						</picture> -->
 						<!-- <img src="assets/pictures/banners/shutterstock_424873498.jpg" class="hide-on-small-only" alt="MENI Coffee - Cappuccino Latte Art Banner" />
 						<img src="assets/pictures/banners/phone/BANNER2.png" class="hide-on-med-and-up" alt="MENI Coffee - Cappuccino Latte Art" /> -->
-						<img src="https://menicoffee.com/wp-content/uploads/2023/03/meni_baner_2.webp"  class="hide-on-small-only" alt="MENI Coffee - Moon phases Banner" />
+						<img src="https://menicoffee.com/wp-content/uploads/2023/03/meni_baner_2.webp" class="hide-on-small-only" alt="MENI Coffee - Moon phases Banner" />
 						<img src="https://menicoffee.com/wp-content/uploads/2023/03/meni_baner_2_M.png" class="hide-on-med-and-up" alt="MENI Coffee - Moon phases Banner" />
 
 						<div class="caption right-align">
@@ -164,9 +190,8 @@
 						</picture> -->
 						<!-- <img src="assets/pictures/banners/shutterstock_1882416772.jpg" class="hide-on-small-only" alt="MENI Coffee - Espresso Filter with Freshly Ground Coffee Banner" />
 						<img src="assets/pictures/banners/phone/BANNER3.png" class="hide-on-med-and-up" alt="MENI Coffee - Espresso Filters with Whole Bean Coffee and Freshly Ground Coffee" /> -->
-						<img src="https://menicoffee.com/wp-content/uploads/2023/03/meni_baner_3.webp"  class="hide-on-small-only" alt="MENI Coffee - Moon phases Banner" />
+						<img src="https://menicoffee.com/wp-content/uploads/2023/03/meni_baner_3.webp" class="hide-on-small-only" alt="MENI Coffee - Moon phases Banner" />
 						<img src="https://menicoffee.com/wp-content/uploads/2023/03/meni_baner_3_M.png" class="hide-on-med-and-up" alt="MENI Coffee - Moon phases Banner" />
-
 
 						<div class="caption left-align">
 							<h1 class="hero3_Title">
@@ -512,7 +537,7 @@
 				<div class="col s12 m12 l6 push-l3" style="padding: 12px">
 					<div class="row left-align">
 						<div class="col s6 m4">
-							<h6 class="meni_crema bold LineH" >About Us</h6>
+							<h6 class="meni_crema bold LineH">About Us</h6>
 							<ul class="menu">
 								<li><a href="https://menicoffee.com/company-info">Company info</a></li>
 								<li><a href="https://menicoffee.com/our-story">Our Story</a></li>
@@ -522,7 +547,7 @@
 						</div>
 
 						<div class="col s6 m4">
-							<h6 class="meni_crema bold LineH" >Support</h6>
+							<h6 class="meni_crema bold LineH">Support</h6>
 							<ul class="menu">
 								<li><a href="https://menicoffee.com/faq">FAQ</a></li>
 								<li><a href="https://menicoffee.com/blog">Blog</a></li>
@@ -548,9 +573,9 @@
 
 					<a href="#contact_modal" class="waves-effect waves-light mybtn3 modal-trigger">CONTACT US</a>
 
-					<ul  class="menu">
-						<li><a  href="#!">Phone: (407) 617 8200</a></li>
-						<li><a  href="#!">Email: info@menicoffee.com</a></li>
+					<ul class="menu">
+						<li><a href="#!">Phone: (407) 617 8200</a></li>
+						<li><a href="#!">Email: info@menicoffee.com</a></li>
 					</ul>
 				</div>
 

@@ -43,8 +43,11 @@
 }
 
 .fa-youtube {
-	background: #bb0000;
-	color: white;
+	/* background: #bb0000;
+	color: white; */
+
+	background: #151a21 !important;
+	color: #fdf9ec !important;
 }
 
 

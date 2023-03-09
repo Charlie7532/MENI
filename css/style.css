@@ -2,15 +2,15 @@
 
 @font-face {
 	font-family: NowAltFont;
-	src: url(https://main.menicoffee.com//assets/fonts/NowAltFont/NowAlt-Regular.otf) format("truetype");
+	src: url(https://main.menicoffee.com//assets/fonts/NowAltFont/NowAlt-Regular.otf) format('truetype');
 }
 @font-face {
 	font-family: NowAlt_Bold;
-	src: url(https://main.menicoffee.com//assets/fonts/NowAltFont/NowAlt-Bold.otf) format("truetype");
+	src: url(https://main.menicoffee.com//assets/fonts/NowAltFont/NowAlt-Bold.otf) format('truetype');
 }
 @font-face {
 	font-family: NowAlt_Light;
-	src: url(https://main.menicoffee.com//assets/fonts/NowAltFont/NowAlt-Light.otf) format("truetype");
+	src: url(https://main.menicoffee.com//assets/fonts/NowAltFont/NowAlt-Light.otf) format('truetype');
 }
 
 * {
@@ -486,13 +486,6 @@ h6 {
 	}
 } */
 
-.sidenav {
-	background-color: #fdf9ec;
-	height: 100vh;
-	width: 200px;
-	border-radius: 25px 0 0 25px;
-}
-
 @media only screen and (max-width: 600px) {
 	.caption h1 {
 		font-size: 30px;
@@ -636,31 +629,6 @@ label.box {
 	margin-left: 5px;
 }
 
-.fa {
-    padding: 15px;
-    font-size: 30px;
-    /* width: 30px; */
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 50%;
-}
-
-.fa:hover {
-	opacity: 0.5;
-}
-
-.fa-facebook {
-	/* background: #3b5998; */
-    background: #151a21 !important;
-	color: #fdf9ec !important;
-}
-
-.fa-instagram {
-	/* background: #125688; */
-    background: #151a21 !important;
-	color: #fdf9ec !important;
-}
 .hero2_Title,
 .hero3_Title {
 	text-shadow: 2px 2px 4px #000000;
