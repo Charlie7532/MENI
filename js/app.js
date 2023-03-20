@@ -10,6 +10,8 @@ document.addEventListener('DOMContentLoaded', function () {
 	// 	interval: 5000,
 	// });
 
+    M.Parallax.init(document.querySelectorAll('.parallax'));
+
 	M.Modal.init(document.querySelectorAll('.modal'), {
 		opacity: 0.5,
 		preventScrolling: true,
