@@ -395,11 +395,12 @@ h6 {
 	left: 10px;
 }
 .menu a {
-	color: #b5b4b380;
+	color: #b5b4b3ff;
 }
 
 .menu a:hover {
-	color: #b5b4b3ff;
+	color: #b5b4b380;
+	/* color: white; */
 }
 .LineH {
 	border-bottom: #fdf9ec solid 1px;
