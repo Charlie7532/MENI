@@ -56,6 +56,12 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 }
+.card a {
+	color: #1a0dab;
+}
+.card a:hover {
+	border-bottom: 1px solid;
+}
 
 h1 {
 	font-family: NowAlt_Bold;
@@ -342,7 +348,7 @@ h6 {
 	border-radius: 50%;
 	border: 1px solid #fdf9ec;
 	display: inline-block;
-	transition: background-color 0.6s ease;	
+	transition: background-color 0.6s ease;
 }
 
 .active,
@@ -648,6 +654,9 @@ label.box {
 	}
 }
 
-.test{
-	width: fit-content;	background-color: #4e5357ff;	opacity: 0.5;	border-radius: 25px;
+.test {
+	width: fit-content;
+	background-color: #4e5357ff;
+	opacity: 0.5;
+	border-radius: 25px;
 }
