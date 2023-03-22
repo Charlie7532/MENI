@@ -150,7 +150,8 @@
 				}
 
 				h1.hero_SubTitle {
-					font-family: NowAlt_Light !important;
+					font-family: NowAltFont !important;
+					font-weight: lighter;
 					font-size: 1.5em !important;
 					letter-spacing: 0.3em !important;
 					color: #f2f2f2;
@@ -180,35 +181,10 @@
 					}
 				}
 			</style>
-			<script async src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-			<script>
-				document.addEventListener('DOMContentLoaded', function () {
-					M.Slider.init(document.querySelectorAll('.slider'), {
-						fullWidth: true,
-						indicators: true,
-						duration: 2500,
-						interval: 5000,
-					});
-				});
-			</script>
 			<div class="slider fullscreen">
 				<ul class="slides">
 					<li name="baner_1">
-						<img
-							alt="MENI Coffee - Moon phases Banner"
-							class="hero"
-							loading="lazy"
-							src="https://menicoffee.com/wp-content/uploads/2023/03/meni_baner_1.webp"
-							srcset="
-								https://menicoffee.com/wp-content/uploads/2023/03/meni_baner_1-150x150.webp   150w,
-								https://menicoffee.com/wp-content/uploads/2023/03/meni_baner_1-600x375.webp   600w,
-								https://menicoffee.com/wp-content/uploads/2023/03/meni_baner_1-768x480.webp   768w,
-								https://menicoffee.com/wp-content/uploads/2023/03/meni_baner_1-1024x640.webp 1024w,
-								https://menicoffee.com/wp-content/uploads/2023/03/meni_baner_1-1536x960.webp 1536w,
-								https://menicoffee.com/wp-content/uploads/2023/03/meni_baner_1.webp          1920w
-							"
-							sizes="(min-width: 600px) 100vw"
-						/>
+						<img alt="MENI Coffee - Moon phases Banner" class="hero" src="https://menicoffee.com/wp-content/uploads/2023/03/meni_baner_1.webp" sizes="(min-width: 600px) 100vw" />
 
 						<div class="caption center-align">
 							<h1 class="hero_SubTitle">Write your own destiny</h1>
@@ -229,21 +205,7 @@
 						</div>
 					</li>
 					<li name="baner_2">
-						<img
-							alt="MENI Coffee - Cappuccino Latte Art Banner"
-							class="hero"
-							decoding="async"
-							loading="lazy"
-							srcset="
-								https://menicoffee.com/wp-content/uploads/2023/03/meni_baner_2-150x150.webp   150w,
-								https://menicoffee.com/wp-content/uploads/2023/03/meni_baner_2-600x375.webp   600w,
-								https://menicoffee.com/wp-content/uploads/2023/03/meni_baner_2-768x480.webp   768w,
-								https://menicoffee.com/wp-content/uploads/2023/03/meni_baner_2-1024x640.webp 1024w,
-								https://menicoffee.com/wp-content/uploads/2023/03/meni_baner_2-1536x960.webp 1536w,
-								https://menicoffee.com/wp-content/uploads/2023/03/meni_baner_2.webp          1920w
-							"
-							src="https://menicoffee.com/wp-content/uploads/2023/03/meni_baner_2.webp"
-						/>
+						<img alt="MENI Coffee - Cappuccino Latte Art Banner" class="hero" src="https://menicoffee.com/wp-content/uploads/2023/03/meni_baner_2.webp" />
 
 						<div class="caption right-align">
 							<h1>ROASTED COFFEE <br />FOR YOU</h1>
@@ -259,21 +221,7 @@
 						</div>
 					</li>
 					<li name="baner_3">
-						<img
-							alt="MENI Coffee - Espresso Filter with Freshly Ground Coffee Banner"
-							class="hero"
-							decoding="async"
-							loading="lazy"
-							srcset="
-								https://menicoffee.com/wp-content/uploads/2023/03/meni_baner_3-150x150.webp   150w,
-								https://menicoffee.com/wp-content/uploads/2023/03/meni_baner_3-600x375.webp   600w,
-								https://menicoffee.com/wp-content/uploads/2023/03/meni_baner_3-768x480.webp   768w,
-								https://menicoffee.com/wp-content/uploads/2023/03/meni_baner_3-1024x640.webp 1024w,
-								https://menicoffee.com/wp-content/uploads/2023/03/meni_baner_3-1536x960.webp 1536w,
-								https://menicoffee.com/wp-content/uploads/2023/03/meni_baner_3.webp          1920w
-							"
-							src="https://menicoffee.com/wp-content/uploads/2023/03/meni_baner_3.webp"
-						/>
+						<img alt="MENI Coffee - Espresso Filter with Freshly Ground Coffee Banner" class="hero" src="https://menicoffee.com/wp-content/uploads/2023/03/meni_baner_3.webp" />
 
 						<div class="caption left-align">
 							<h1>UNLEASH YOUR INNER <br />COFFEE CONNOISSEUR</h1>
@@ -321,6 +269,16 @@
 			</style>
 			<div href="#home" class="prev vertical_center" style="z-index: 900" onclick="M.Slider.getInstance(document.querySelector('.slider')).prev()"><i class="material-icons">arrow_back</i></div>
 			<div href="#home" class="next vertical_center" style="z-index: 900" onclick="M.Slider.getInstance(document.querySelector('.slider')).next()"><i class="material-icons">arrow_forward</i></div>
+			<script>
+				document.addEventListener('DOMContentLoaded', function () {
+					M.Slider.init(document.querySelectorAll('.slider'), {
+						fullWidth: true,
+						indicators: true,
+						duration: 2500,
+						interval: 5000,
+					});
+				});
+			</script>
 		</section>
 
 		<section id="Our_elixir" class="ligth-section">

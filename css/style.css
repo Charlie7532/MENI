@@ -5,12 +5,14 @@
 	src: url(https://main.menicoffee.com//assets/fonts/NowAltFont/NowAlt-Regular.otf) format('truetype');
 }
 @font-face {
-	font-family: NowAlt_Bold;
+	font-family: NowAltFont;
 	src: url(https://main.menicoffee.com//assets/fonts/NowAltFont/NowAlt-Bold.otf) format('truetype');
+	font-weight: bold;
 }
 @font-face {
-	font-family: NowAlt_Light;
+	font-family: NowAltFont;
 	src: url(https://main.menicoffee.com//assets/fonts/NowAltFont/NowAlt-Light.otf) format('truetype');
+	font-weight: lighter;
 }
 
 * {
@@ -63,10 +65,20 @@ body {
 	border-bottom: 1px solid;
 }
 
-h1 {
-	font-family: NowAlt_Bold;
-	font-size: 2em;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+	font-family: NowAltFont;
 	color: #151a21;
+}
+
+h1 {
+	font-size: 2em;
+	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
 	padding: 5px 0;
@@ -74,28 +86,25 @@ h1 {
 }
 
 h2 {
-	font-family: NowAlt_Bold;
 	font-size: 1.5em;
-	color: #151a21;
+	font-weight: bold;
 	margin: 3px 0;
 }
 
 h3,
 h4,
-h6,
 p {
-	font-family: NowAlt_Light;
 	font-size: 1.3rem;
-	color: #151a21;
+	font-weight: lighter;
 }
 
 h4 {
-	color: #151a21;
+	font-weight: bold;
 }
 
 h5 {
-	font-family: NowAlt_Bold;
 	font-size: 1.5em;
+	font-weight: bold;
 	letter-spacing: 0.5em;
 }
 
@@ -109,7 +118,8 @@ h6 {
 }
 
 .bold {
-	font-family: NowAlt_Bold;
+	font-family: NowAltFont;
+	font-weight: bold;
 	padding-left: 0px;
 	margin: 0px;
 }
@@ -220,10 +230,6 @@ h6 {
 	overflow: hidden;
 }
 
-.mySlides {
-	display: none;
-}
-
 .vertical_center {
 	margin: 0;
 	position: absolute;
@@ -235,15 +241,6 @@ h6 {
 	width: 100vw;
 }
 
-.Center_banner100 {
-	min-width: 100%;
-	width: 100%;
-	margin: 0;
-	position: absolute;
-	/* top: 0;
-	-ms-transform: translateY(-200%);
-	transform: translateY(-200%); */
-}
 
 /* Caption text */
 .text {
@@ -553,12 +550,4 @@ label.box {
 	border-radius: 15px;
 	padding: 0px 10px;
 	margin-left: 5px;
-}
-
-
-.test {
-	width: fit-content;
-	background-color: #4e5357ff;
-	opacity: 0.5;
-	border-radius: 25px;
 }
