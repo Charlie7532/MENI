@@ -89,18 +89,6 @@ p {
 	color: #151a21;
 }
 
-.caption h1 {
-	font-size: 3.5em;
-	color: #f2f2f2;
-}
-.caption h2 {
-	font-family: NowAlt_Light;
-	font-size: 2em;
-	letter-spacing: 0.1em;
-	color: #f2f2f2;
-	padding-top: 20%;
-}
-
 h4 {
 	color: #151a21;
 }
@@ -255,59 +243,6 @@ h6 {
 	/* top: 0;
 	-ms-transform: translateY(-200%);
 	transform: translateY(-200%); */
-}
-
-.horizontal_center {
-	margin: 0;
-	position: absolute;
-	left: 50%;
-	/* -ms-transform: translateX(-50%); */
-	transform: translateX(-100%);
-}
-
-/* Slideshow container */
-.slideshow-container {
-	/* height: fit-content; */
-	min-height: 100vh;
-	height: 100vh;
-	max-height: 100vh;
-
-	position: relative;
-	margin: auto;
-	overflow: hidden;
-}
-.slideshow-container img {
-	/* justify-content: center; */
-	/* text-align: center; */
-	width: 100%;
-	margin: auto;
-	margin: 0;
-	position: absolute;
-
-	top: 50%;
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
-}
-
-/* @media screen and (max-width: 1200px){
-	.slideshow-container img {
-		width: 110;
-	}
-} */
-
-/* Next & previous buttons */
-
-/* Position the "next button" to the right */
-.next {
-	right: 0;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-	background-color: #151a2180;
-	color: #fdf9ec;
-	border-radius: 30px;
 }
 
 /* Caption text */
@@ -620,39 +555,6 @@ label.box {
 	margin-left: 5px;
 }
 
-.hero2_Title,
-.hero3_Title {
-	text-shadow: 2px 2px 4px #000000;
-	padding: 0 0 0 0;
-}
-.hero1_SubTitle,
-.hero2_SubTitle,
-.hero3_SubTitle {
-	padding-top: 16%;
-}
-.hero1_content,
-.hero2_content,
-.hero3_content {
-	padding: 0%;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-}
-.hero_content {
-	max-width: 350px;
-	display: inline-block;
-	clear: both;
-	color: #fdf9ec !important;
-	text-shadow: 2px 2px 4px #000000;
-	margin: 50px 3px 50px 3px;
-}
-
-@media only screen and (max-width: 600px) {
-	.hero2_Title,
-	.hero3_Title {
-		font-size: 35px;
-	}
-}
 
 .test {
 	width: fit-content;
