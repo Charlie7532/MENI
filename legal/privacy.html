@@ -10,12 +10,11 @@
 		<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 		<link rel="stylesheet" href="https://main.menicoffee.com/css/style.css" />
-
 	</head>
 
 	<body>
 		<style>
-			.header{
+			.header {
 				background-color: #151a21;
 			}
 		</style>
@@ -121,10 +120,503 @@
 			</div>
 		</header>
 		<main>
-			<section class="ligth-section">
-				
+			<section id="home" name="BANER" style="min-height: 100vh !important">
+				<style>
+					.caption h1,
+					.caption p {
+						font-size: 3.5em !important;
+						color: #fdf9ec !important;
+						text-shadow: 2px 2px 4px #000000;
+						padding: 0;
+					}
+
+					.caption p {
+						font-size: 1.2em !important;
+						line-height: 35px;
+					}
+
+					h1.hero_SubTitle {
+						font-family: NowAltFont !important;
+						font-weight: lighter !important;
+						font-size: 1.5em !important;
+						letter-spacing: 0.3em !important;
+						color: #fdf9ec !important;
+						padding-top: 20%;
+						padding-top: 16%;
+					}
+
+					.hero1_content,
+					.hero2_content,
+					.hero3_content {
+						padding: 0%;
+						width: 100%;
+						margin-left: auto;
+						margin-right: auto;
+					}
+					.hero_content {
+						max-width: 350px;
+						display: inline-block;
+						clear: both;
+						color: #fdf9ec !important;
+						text-shadow: 2px 2px 4px #000000;
+						margin: 50px 3px 50px 3px;
+					}
+
+					@media only screen and (max-width: 600px) {
+						.caption h1 {
+							font-size: 2em;
+						}
+					}
+				</style>
+				<div class="slider fullscreen">
+					<ul class="slides">
+						<li name="baner_1">
+							<img alt="MENI Coffee - Moon phases Banner" class="hero" src="https://menicoffee.com/wp-content/uploads/2023/03/meni_baner_1.webp" width="1920" height="1200" />
+
+							<div class="caption center-align">
+								<h1 class="hero_SubTitle">Write your own destiny</h1>
+								<h1>IN THE NAME OF COFFEE</h1>
+								<div>
+									<div class="hero1_content center row">
+										<div style="max-width: 450px; height: 150px">
+											<div class="col s12">
+												<p class="meni_crema">Whenever you take a sip of Meni's elixir, remember that you're aligning yourself with the power of the <b>goddess of fate and destiny.</b></p>
+											</div>
+											<div class="col s12" style="margin-top: 10px">
+												<a href="https://www.amazon.com/dp/B0BSG7ZLBJ?ref=myi_il_dp" target="_blank" rel="noopener noreferrer" class="waves-effect waves-light mybtn">TRY COFFEE</a>
+												<!-- <a href="#Our_Story" class="waves-effect waves-light mybtn">LEARN MORE</a> -->
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li name="baner_2">
+							<img alt="MENI Coffee - Cappuccino Latte Art Banner" class="hero" src="https://menicoffee.com/wp-content/uploads/2023/03/meni_baner_2.webp" width="1920" height="1200" />
+
+							<div class="caption right-align">
+								<h1>ROASTED COFFEE <br />FOR YOU</h1>
+								<div class="hero2_content right">
+									<div>
+										<p class="hero_content">Meni is a celebration of the <b>finest coffee beans from the world over</b>, carefully selected and crafted to bring out their unique characteristics.</p>
+									</div>
+									<div>
+										<a href="https://www.amazon.com/dp/B0BSG7ZLBJ?ref=myi_il_dp" target="_blank" rel="noopener noreferrer" class="waves-effect waves-light mybtn">TRY COFFEE</a>
+										<a href="#Our_elixir" class="waves-effect waves-light mybtn2">READ MORE</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li name="baner_3">
+							<img
+								alt="MENI Coffee - Espresso Filter with Freshly Ground Coffee Banner"
+								class="hero"
+								src="https://menicoffee.com/wp-content/uploads/2023/03/meni_baner_3.webp"
+								width="1920"
+								height="1200"
+							/>
+
+							<div class="caption left-align">
+								<h1>UNLEASH YOUR INNER <br />COFFEE CONNOISSEUR</h1>
+								<div class="hero3_content left">
+									<div>
+										<p class="hero_content">Enjoy Freshly Roasted Beans at Your Doorstep with <b>Monthly Delivery.</b></p>
+									</div>
+									<div>
+										<a href="#subscribe_modal" class="waves-effect waves-light pulse modal-trigger mybtn4" style="background-color: #fdf9ec">SUBSCRIBE</a>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<style>
+					.prev,
+					.next {
+						cursor: pointer;
+						position: absolute;
+						top: 50%;
+						width: 34px;
+						height: 34px;
+						padding: 5px;
+						color: #151a21;
+						background-color: #fdf9ec80;
+						font-weight: bold;
+						font-size: 0px;
+						margin: 10px;
+						transition: 0.6s ease;
+						border-radius: 50%;
+						user-select: none;
+					}
+					.next {
+						right: 0;
+					}
+
+					/* On hover, add a black background color with a little bit see-through */
+					.prev:hover,
+					.next:hover {
+						background-color: #151a2180;
+						color: #fdf9ec;
+					}
+				</style>
+				<div href="#home" class="prev vertical_center" style="z-index: 900" onclick="M.Slider.getInstance(document.querySelector('.slider')).prev()"><i class="material-icons">arrow_back</i></div>
+				<div href="#home" class="next vertical_center" style="z-index: 900" onclick="M.Slider.getInstance(document.querySelector('.slider')).next()"><i class="material-icons">arrow_forward</i></div>
+				<script>
+					document.addEventListener('DOMContentLoaded', function () {
+						M.Slider.init(document.querySelectorAll('.slider'), {
+							fullWidth: true,
+							indicators: true,
+							duration: 2500,
+							interval: 5000,
+						});
+					});
+				</script>
+			</section>
+
+			<section id="Our_elixir" class="ligth-section">
+				<div class="ligth-section hide-on-small-only"></div>
+				<dic class="container">
+					<div class="center-align" style="padding: 5%; font-size: 1rem">
+						<h5 class="animate__animated animate__fadeInDown">YOUR DESTINY IN A CUP</h5>
+						<h6 class="dark">Revolutionizing specialty coffee, one cup at a time.</h6>
+					</div>
+					<div class="row" style="font-size: 0.6rem; margin-bottom: 0">
+						<div class="center-align col s12 m4">
+							<img
+								alt="MENI Coffee - Whole Bean Blend in a Cup"
+								src="https://menicoffee.com/wp-content/uploads/2023/03/beans150.webp"
+								loading="lazy"
+								decoding="auto"
+								width="150px"
+								height="150px"
+								style="width: 150px; height: 150px"
+							/>
+							<br /><br />
+							<h5 class="dark"><b>DESTINED FOR GREATNESS</b></h5>
+							<br />
+							<p>
+								Our commitment to the dedicated coffee producers in our network is to reward their extraordinary quality with fair, high and stable prices. By partnering with them, we help bring
+								stability and prosperity, just as the goddess Meni blesses those she favors.
+							</p>
+						</div>
+						<div class="center-align col s12 m4">
+							<img
+								alt="MENI Coffee - Ground Coffee in a Cup"
+								src="https://menicoffee.com/wp-content/uploads/2023/03/ground150.webp"
+								loading="lazy"
+								decoding="auto"
+								width="150px"
+								height="150px"
+								style="width: 150px; height: 150px"
+							/>
+							<br /><br />
+							<h5 class="dark"><b>ROASTED WITH PURPOSE</b></h5>
+							<br />
+							<p>
+								Our master roasters believe in bringing out each coffee's unique character. Rather than homogenizing the flavor, we roast with care and respect, just as Meni guides us to reach our
+								full potential.
+							</p>
+						</div>
+						<div class="center-align col s12 m4">
+							<img
+								alt="MENI Coffee - Fresh Brewed Cup of Coffee"
+								src="https://menicoffee.com/wp-content/uploads/2023/03/brewed150.webp"
+								loading="lazy"
+								decoding="auto"
+								width="150px"
+								height="150px"
+								style="width: 150px; height: 150px"
+							/><br /><br />
+							<h5 class="dark"><b>FRESH FROM THE SOURCE</b></h5>
+							<br />
+							<p>
+								We believe that fresh coffee should move quickly, just as fate moves swiftly for those blessed by Meni. Savor the exceptional quality and taste the difference with Meni, your destiny
+								in a cup.
+							</p>
+						</div>
+					</div>
+				</dic>
+				<div class="ligth-section hide-on-small-only"></div>
+			</section>
+
+			<section id="Our_Story">
+				<div class="parallax-container" ,="" style="min-height: 80svh">
+					<div class="parallax" style="filter: opacity(50%); min-height: 200px">
+						<!-- <video width="100%" autoplay loop muted><source src="assets/Videos/pexels-emils-vanags-6918538.mp4" type=video/mp4 ></video> -->
+						<img src="https://menicoffee.com/wp-content/uploads/2023/03/mike-kenneally-TD4DBagg2wE-unsplash-jpg.webp" decoding="async" loading="lazy" alt="coffee beans background" />
+					</div>
+					<div class="vertical_center center-align eBlock">
+						<h1 class="meni_crema text_shadow">OUR STORY</h1>
+						<h6 class="meni_crema text_shadow" style="max-width: 400px; display: block; margin-left: auto; margin-right: auto">
+							Meni is a specialty coffee brand inspired by the goddess of abundance and good fortune. Sourced from the finest coffee regions and roasted with care.
+						</h6>
+						<a href="https://menicoffee.com/index.php/our-story/" class="waves-effect waves-light mybtn">our story</a>
+					</div>
+				</div>
+			</section>
+
+			<section id="Coffee_shop" class="ligth-section">
+				<div class="ligth-section hide-on-small-only"></div>
+				<div class="center-align" style="padding: 5%; font-size: 1rem">
+					<h5 class="animate__animated animate__fadeInDown">ENJOY SPECIALTY FRESH COFFEE</h5>
+					<h6 class="dark">Find indpiration in every cup</h6>
+				</div>
+				<div class="container row" style="font-size: 0.6rem; margin-bottom: 0">
+					<div name="Whole Bean Traditional" class="col s12 m6 l4">
+						<div class="card" style="max-width: 400px; border-radius: 25px">
+							<div class="card-image waves-effect waves-block waves-light">
+								<img class="activator" src="https://menicoffee.com/wp-content/uploads/2023/03/MENI-Colombian-wholebean-00.webp" decoding="async" loading="lazy" alt="MENI Coffee - Whole Bean Bag" />
+							</div>
+							<div class="card-content">
+								<span class="card-title activator grey-text text-darken-4"
+									>Traditional Colombian <br />
+									Whole Bean<i class="material-icons right">more_vert</i></span
+								>
+								<p>
+									<a href="https://www.amazon.com/dp/B0BSG6ZSBD?ref=myi_il_dp&amp;th=1" target="_blank" rel="noopener noreferrer">Get it on Amazon</a>
+								</p>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-4"
+									>Traditional Colombian <br />
+									Whole Bean<i class="material-icons right">close</i></span
+								>
+								<ul>
+									<li><p>Supreme coffee beans are carefully sourced from specific regions known for producing high-quality beans</p></li>
+									<li><p>Packaged to maintain freshness</p></li>
+									<li><p>Sold in whole bean form to ensure maximum freshness</p></li>
+									<li><p>Ships quickly and conveniently with Amazon Prime</p></li>
+								</ul>
+								<a href="https://www.amazon.com/dp/B0BSG6ZSBD?ref=myi_il_dp&amp;th=1" target="_blank" rel="noopener noreferrer" class="waves-effect waves-light mybtn3">TRY COFFEE </a>
+							</div>
+						</div>
+					</div>
+
+					<div name="Ground Traditional" class="col s12 m6 l4">
+						<div class="card" style="max-width: 400px; border-radius: 25px">
+							<div class="card-image waves-effect waves-block waves-light">
+								<img class="activator" src="https://menicoffee.com/wp-content/uploads/2023/03/MENI-Colombian-ground-00.webp" decoding="async" loading="lazy" alt="MENI Coffee - Ground Bag" />
+							</div>
+							<div class="card-content">
+								<span class="card-title activator grey-text text-darken-4"
+									>Traditional Colombian <br />
+									Ground<i class="material-icons right">more_vert</i></span
+								>
+								<p>
+									<a href="https://www.amazon.com/dp/B0BSG6ZSBD?ref=myi_il_dp&amp;th=1" target="_blank" rel="noopener noreferrer"> Get it on Amazon </a>
+								</p>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-4"
+									>Traditional Colombian <br />
+									Ground<i class="material-icons right">close</i></span
+								>
+								<ul>
+									<li><p>Supreme coffee beans are carefully sourced from specific regions known for producing high-quality beans</p></li>
+									<li><p>Packaged to maintain freshness</p></li>
+									<li><p>Sold in whole bean form to ensure maximum freshness</p></li>
+									<li><p>Ships quickly and conveniently with Amazon Prime</p></li>
+								</ul>
+								<a href="https://www.amazon.com/dp/B0BSG6ZSBD?ref=myi_il_dp&amp;th=1" target="_blank" rel="noopener noreferrer" class="waves-effect waves-light mybtn3">TRY COFFEE </a>
+							</div>
+						</div>
+					</div>
+
+					<div name="Whole Bean Traditional" class="col s12 m6 l4 hide-on-med-and-down">
+						<div class="card" style="max-width: 400px; border-radius: 25px">
+							<div class="card-image waves-effect waves-block waves-light">
+								<img class="activator" src="https://menicoffee.com/wp-content/uploads/2023/03/MENI-Colombian-wholebean-00.webp" decoding="async" loading="lazy" alt="MENI Coffee - Whole Bean Bag" />
+							</div>
+							<div class="card-content">
+								<span class="card-title activator grey-text text-darken-4"
+									>Traditional Colombian <br />
+									Whole Bean<i class="material-icons right">more_vert</i></span
+								>
+								<p>
+									<a href="https://www.amazon.com/dp/B0BSG6ZSBD?ref=myi_il_dp&amp;th=1" target="_blank" rel="noopener noreferrer">Get it on Amazon</a>
+								</p>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-4"
+									>Traditional Colombian <br />
+									Whole Bean<i class="material-icons right">close</i></span
+								>
+								<ul>
+									<li><p>Supreme coffee beans are carefully sourced from specific regions known for producing high-quality beans</p></li>
+									<li><p>Packaged to maintain freshness</p></li>
+									<li><p>Sold in whole bean form to ensure maximum freshness</p></li>
+									<li><p>Ships quickly and conveniently with Amazon Prime</p></li>
+								</ul>
+								<a href="https://www.amazon.com/dp/B0BSG6ZSBD?ref=myi_il_dp&amp;th=1" target="_blank" rel="noopener noreferrer" class="waves-effect waves-light mybtn3">TRY COFFEE </a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ligth-section hide-on-small-only"></div>
 			</section>
 		</main>
+
+		<section name="MODAL">
+			<div id="subscribe_modal" class="modal modal-fixed-footer R25 crema-background">
+				<h5 class="modal-close meni_blue">&#10005;</h5>
+				<form name="subscribe_Form" class="form">
+					<div class="modal-content">
+						<br /><br class="hide-on-small-only" />
+						<h4>We are currently working in develop our monthly delivery program.</h4>
+						<h6 class="dark">If you'd like more information and updates about this program please leave us your information.</h6>
+
+						<div class="row">
+							<div class="input-field col s12 m6">
+								<i class="material-icons prefix">person</i>
+								<input id="first_name" type="text" class="validate" required />
+								<label for="first_name">First Name</label>
+							</div>
+
+							<div class="input-field col s12 m6">
+								<i class="material-icons prefix hide-on-small-only hide-on-med-and-up">person</i>
+								<input id="last_name" type="text" class="validate" required />
+								<label for="last_name">Last Name</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s12 m7 xl8">
+								<i class="material-icons prefix">email</i>
+								<input id="email" type="email" class="validate" required />
+								<label for="email">Email</label>
+							</div>
+							<div class="input-field col s12 m5 xl4">
+								<i class="material-icons prefix">phone</i>
+								<input id="Phone" type="tel" class="validate" />
+								<label for="Phone">Phone (Optional)</label>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button href="#!" type="submit" class="waves-effect waves-light btn-flat" name="action"><i class="right material-icons">send</i> SEND</button>
+					</div>
+				</form>
+			</div>
+
+			<div id="contact_modal" class="modal modal-fixed-footer R25 meni">
+				<h5 class="modal-close meni_crema">&#10005;</h5>
+				<form name="contact_Form" class="form">
+					<div class="modal-content">
+						<div class="row" style="margin: 0px">
+							<div class="col s12 m5 hide-on-small-only">
+								<div class="row">
+									<h6 class="meni_crema col s12 P0">Contact information</h6>
+									<p class="col s12 P0" style="color: grey; padding: 0%">
+										We're open for any suggestion or <br />
+										just to have a chat
+									</p>
+									<br />
+									<div class="row">
+										<h6 class="meni_crema col s12 m5 P0"><i class="material-icons prefix meni_crema">place</i> Address:</h6>
+										<p class="col s12 m7 P0" style="color: grey">Orlando, Fl 32829</p>
+										<br /><br class="hide-on-small-only" />
+									</div>
+
+									<div class="row">
+										<h6 class="meni_crema col s12 m5 P0"><i class="material-icons prefix meni_crema">phone</i> Phone:</h6>
+										<p class="col s12 m7 P0" style="color: grey; padding: 0%">(407) 617 8200</p>
+										<br /><br class="hide-on-small-only" />
+									</div>
+									<div class="row">
+										<h6 class="meni_crema col s12 m5 P0"><i class="material-icons prefix meni_crema">email</i> Email:</h6>
+										<p class="col s12 m7 P0" style="color: grey; padding: 0%">info@menicoffee.com</p>
+										<br /><br class="hide-on-small-only" />
+									</div>
+								</div>
+							</div>
+							<div class="col s0 m1 hide-on-small-only"><div class="vl"></div></div>
+							<div class="col s12 m6">
+								<div class="row">
+									<h6 class="meni_crema">Get in touch with us</h6>
+									<div class="input-field col s12 m12 l6">
+										<input id="first_name2" type="text" class="validate text-box meni_crema" required />
+										<label for="first_name2">First Name</label>
+									</div>
+									<div class="input-field col s12 m12 l6">
+										<input id="last_name2" type="text" class="validate text-box meni_crema" required />
+										<label for="last_name2">Last Name</label>
+									</div>
+									<div class="input-field col s12">
+										<input id="email2" type="email" class="validate text-box meni_crema" style="width: 100% !important" required />
+										<label for="email2">Email</label>
+									</div>
+									<div class="input-field col s12">
+										<input id="subject" type="text" class="validate text-box meni_crema" data-length="30" style="width: 100% !important" required />
+										<label for="subject">Subject</label>
+									</div>
+									<div class="input-field col s12">
+										<textarea id="message" class="text-box meni_crema" required></textarea>
+										<label for="message" class="box">Message</label>
+									</div>
+								</div>
+							</div>
+
+							<div class="center-align col s12 m5 hide-on-med-and-up">
+								<div class="row">
+									<h6 class="meni_crema col s12 P0">Contact information</h6>
+									<p class="col s12 P0" style="color: grey; padding: 0%">We're open for any suggestion or just to have a chat</p>
+									<br />
+									<div class="row">
+										<h6 class="meni_crema col s12 m5 P0"><i class="material-icons prefix meni_crema">place</i> Address:</h6>
+										<p class="col s12 m7 P0" style="color: grey">Orlando, Fl 32829</p>
+										<br /><br class="hide-on-small-only" />
+									</div>
+
+									<div class="row">
+										<h6 class="meni_crema col s12 m5 P0"><i class="material-icons prefix meni_crema">phone</i> Phone:</h6>
+										<p class="col s12 m7 P0" style="color: grey; padding: 0%">(407) 617 8200</p>
+										<br /><br class="hide-on-small-only" />
+									</div>
+									<div class="row">
+										<h6 class="meni_crema col s12 m5 P0"><i class="material-icons prefix meni_crema">email</i> Email:</h6>
+										<p class="col s12 m7 P0" style="color: grey; padding: 0%">info@menicoffee.com</p>
+										<br /><br class="hide-on-small-only" />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer crema-background">
+						<button href="#!!" type="submit" class="waves-effect waves-light btn-flat meni_blue"><i class="right material-icons meni_blue">send</i> SEND</button>
+					</div>
+				</form>
+			</div>
+
+			<div id="thanks_modal" class="modal modal-fixed-footer R25 crema-background">
+				<h5 class="modal-close">&#10005;</h5>
+				<div class="vertical_center">
+					<div class="center-align">
+						<div class="row">
+							<img src="assets/pictures/Logo/MOONS1.png" alt="MENI Coffee - Blue Moon phases" style="width: 100%; padding: 5%" />
+							<br />
+							<h3 class="col s12 meni_blue hide-on-small-only"><b>Thank you for contacting us!</b></h3>
+							<h2 class="col s12 meni_blue hide-on-med-and-up">Thank you for contacting us!</h2>
+							<br />
+							<p class="col s12 meni_blue">
+								We have recived your message. <br />
+								We'll reach out to you immediately
+							</p>
+							<br /><br />
+							<div class="col s12">
+								<h6 class="meni_blue"><b>Let's connect!</b></h6>
+								<a href="#" class="fa fa-facebook btn-floating btn-large"></a>
+								<a href="#" class="fa fa-instagram btn-floating btn-large"></a>
+							</div>
+							<br /><br />
+							<div>
+								<a href="https://menicoffee.com/" class="waves-effect waves-light mybtn3 left" style="margin: 20px">Back to Home</a>
+								<a href="https://menicoffee.com/blog/" class="waves-effect waves-light mybtn3 right" style="margin: 20px">Visit our Blog</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
 		<footer id="footer" name="FOOTER" class="footer">
 			<div class="row left-align" style="padding: 30px; width: 100%">
 				<div class="col s12 m12 l6 push-l3" style="padding: 12px">
@@ -190,7 +682,7 @@
 
 	<!-- <script defer type="text/javascript" src="js/materialize.min.js"></script> -->
 
-	<script defer type="text/javascript" src="js/app.js"></script>
-	<script defer type="text/javascript" src="js/contact.js"></script>
+	<script defer type="text/javascript" src="../js/app.js"></script>
+	<script defer type="text/javascript" src="../js/contact.js"></script>
 	<!-- <script defer type="text/javascript" src="js/slideshow.js"></script> -->
 </html>
