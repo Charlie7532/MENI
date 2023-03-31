@@ -2,12 +2,6 @@
 let test = 0;
 
 document.addEventListener('DOMContentLoaded', function () {
-	M.Slider.init(document.querySelectorAll('.slider'), {
-		fullWidth: true,
-		indicators: true,
-		duration: 2500,
-		interval: 5000,
-	});
 	M.Parallax.init(document.querySelectorAll('.parallax'));
 	M.Sidenav.init(document.querySelectorAll('.sidenav'), { edge: 'right' });
 	M.Modal.init(document.querySelectorAll('.modal'), {
