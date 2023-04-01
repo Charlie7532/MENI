@@ -1,0 +1,139 @@
+/** @format */
+
+header {
+	transition: background-color 1s ease;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 900;
+	overflow: hidden;
+	background-color: #151a21;
+	padding: 0;
+}
+header.transform {
+	transition: background-color 1s ease;
+	background-color: #151a21 !important;
+}
+
+header a {
+	float: left;
+	color: #b5b4b380;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 18px;
+	line-height: 25px;
+	border-radius: 4px;
+	padding: 12px;
+}
+
+header a.logo {
+	font-size: 25px;
+	font-weight: bold;
+	position: relative;
+	text-align: left;
+	text-transform: none;
+}
+
+.logo {
+	height: 40px;
+	width: auto;
+}
+
+header a:hover {
+	color: #b5b4b3ff;
+}
+
+.header-right {
+	margin: 0;
+	float: right;
+}
+
+.header-right a {
+	letter-spacing: 0.15rem;
+}
+
+.horizontal-menu {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.horizontal-menu li {
+	margin: 0;
+	padding: 0;
+}
+
+.horizontal-menu a:hover {
+	display: block;
+	padding: 10px;
+}
+
+#menu-main.menu a {
+	font-size: 20px;
+	margin: 15px 0;
+}
+#menu-main.menu a:hover {
+	background-color: #151a21;
+	color: #fdf9ec;
+	margin: 15px 0;
+	border-bottom: grey solid 1px;
+	transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+.sidenav {
+	background-color: #fdf9ec;
+	height: 100vh;
+	max-width: 300px;
+	width: 80%;
+	border-radius: 25px 0 0 25px;
+}
+
+
+
+.fa {
+	font-size: 20px;
+	width: 30px;
+	height: 30px;
+	text-decoration: none;
+	border-radius: 50%;
+	padding: 12px 16px;
+	font-size: 16px;
+	cursor: pointer;
+	writing-mode: horizontal-tb !important;
+	text-rendering: auto;
+	line-height: normal;
+	text-align: center;
+	letter-spacing: normal;
+	box-sizing: border-box;
+}
+
+.fa:hover {
+	opacity: 0.5;
+}
+
+a .fa-facebook {
+	/* background: #3b5998; */
+	background: #151a21 !important;
+	color: #fdf9ec !important;
+}
+
+a .fa-instagram {
+	/* background: #125688; */
+	background: #151a21 !important;
+	color: #fdf9ec !important;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+	background-color: RoyalBlue;
+}

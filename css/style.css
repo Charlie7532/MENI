@@ -1,7 +1,7 @@
 /**
  * Theme Name: MENI-01
  * Theme URI: 
- * Version: 2.2.10
+ * Version: 2.2.16
  * Description: MENI Coffee. Products for dreamers who believe in destiny.
  * Tags: meni, rigth-sidebar, responsive, darck
  * Author: Juan C Botero
@@ -102,6 +102,9 @@ h4 {
 }
 p a {
 	color: #1a0dab !important;
+}
+p a:hover {
+	border-bottom: 1px solid;
 }
 
 b,
@@ -306,74 +309,6 @@ h6 {
 	}
 }
 
-.header {
-	transition: background-color 1s ease;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: 900;
-	overflow: hidden;
-	/* background-color: #151a2110; */
-	background-color: transparent;
-	padding: 10px 10px;
-}
-
-.header a {
-	float: left;
-	color: #b5b4b380;
-	text-align: center;
-	padding: 12px;
-	text-decoration: none;
-	font-size: 18px;
-	text-transform: uppercase;
-	line-height: 25px;
-	border-radius: 4px;
-}
-
-.header a.logo {
-	font-size: 25px;
-	font-weight: bold;
-}
-
-.logo {
-	height: 45px;
-	position: absolute;
-	top: 10px;
-	left: 10px;
-}
-.menu a {
-	color: #b5b4b3ff;
-}
-
-.menu a:hover {
-	color: #b5b4b380;
-	/* color: white; */
-}
-
-.right-menu {
-	position: absolute;
-	top: 10px;
-	right: 10px;
-}
-
-.header a:hover {
-	background-color: transparent;
-	color: #b5b4b3ff;
-}
-
-.header a.active {
-	background-color: transparent;
-	color: #b5b4b3ff;
-}
-
-.header-right {
-	float: right;
-}
-
-.header-right a {
-	letter-spacing: 0.15rem;
-}
-
 .ligth-section {
 	position: relative;
 	min-height: 250px;
@@ -385,34 +320,6 @@ h6 {
 	min-height: 250px;
 	background-color: #151a21;
 }
-
-@media screen and (max-width: 992px) {
-	.header a {
-		float: none;
-		color: #151a2180;
-		float: none;
-		display: block;
-		text-align: right;
-	}
-
-	.header a:hover {
-		background-color: transparent;
-		color: #151a21;
-	}
-
-	.header a.active {
-		background-color: transparent;
-		color: #151a21;
-	}
-}
-
-/* 
-@media screen and (max-width: 500px) {
-	.banner_pic {
-		width: fit-content;
-		height: 100vh;
-	}
-} */
 
 @media only screen and (max-width: 600px) {
 	.caption h1 {
@@ -564,19 +471,15 @@ label.box {
 	border-radius: 12px 12px 0 0;
 }
 .card-action {
-	/*background-color: #fdf9ec !important;*/
+	background-color: #fdf9ec !important;
 	font-size: 15px;
 	height: 50px;
-	border-radius: 0 0 25px 25px !important;
-}
-.card-action a {
-	/*color:#fdf9ec !important;*/
-	color: #151a21 !important;
+	border-radius: 0 0 12px 12px !important;
 }
 
-.card a {
-	color: #1a0dab !important;
+.card-action a {
+	color: #151a21ff !important;
 }
-.card a:hover {
-	border-bottom: 1px solid;
+.card-action a:hover {
+	color: #151a2180 !important;
 }

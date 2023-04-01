@@ -10,6 +10,7 @@
 		<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/header.css" />
 		<link rel="stylesheet" href="css/preloader.css" />
 
 		<meta
@@ -43,11 +44,13 @@
 				<a href="https://menicoffee.com/"><img type="button" class="logo" alt="MENI Logo" href="#" src="assets/pictures/Logo/Logo_h94px.png" /></a>
 				<div class="header-right">
 					<div class="hide-on-med-and-down">
-						<a href="https://menicoffee.com">Home</a>
-						<a href="https://menicoffee.com/index.php/our-story">Our Story</a>
-						<a href="https://menicoffee.com/index.php/blog">Blog</a>
-						<a href="https://menicoffee.com/index.php/coffee-shop">Coffee Shop</a>
-						<a href="https://menicoffee.com/index.php/contact-us">Contact Us</a>
+						<ul id="menu-main" class="menu horizontal-menu">
+							<li><a href="https://menicoffee.com">Home</a></li>
+							<li><a href="https://menicoffee.com/index.php/our-story">Our Story</a></li>
+							<li><a href="https://menicoffee.com/index.php/blog">Blog</a></li>
+							<li><a href="https://menicoffee.com/index.php/coffee-shop">Coffee Shop</a></li>
+							<li><a href="https://menicoffee.com/index.php/contact-us">Contact Us</a></li>
+						</ul>
 					</div>
 
 					<div class="hide-on-large-only">
@@ -61,65 +64,6 @@
 						<img src="assets/pictures/Logo/M.png" style="width: 50%; padding: 20px 30px" alt="MENI Coffee - Moon Phases Banner" />
 						<img src="assets/pictures/Logo/LÍNEA.png" style="width: 100%" alt="MENI Coffee - Moon Phases Banner" />
 					</div>
-					<style>
-						.sidenav {
-							background-color: #fdf9ec;
-							height: 100vh;
-							max-width: 300px;
-							width: 80%;
-							border-radius: 25px 0 0 25px;
-						}
-						#menu-main.menu a {
-							font-size: 20px;
-							margin: 15px 0;
-							border-bottom: grey solid 1px;
-						}
-						#menu-main.menu a:hover {
-							background-color: #151a21;
-							color: #fdf9ec;
-							font-size: 25px;
-							margin: 15px 0;
-							border-bottom: grey solid 1px;
-							transition: 0.5s;
-						}
-						.fa {
-							font-size: 20px;
-							width: 30px;
-							height: 30px;
-							text-decoration: none;
-							border-radius: 50%;
-							padding: 12px 16px;
-							font-size: 16px;
-							cursor: pointer;
-							writing-mode: horizontal-tb !important;
-							text-rendering: auto;
-							line-height: normal;
-							text-align: center;
-							letter-spacing: normal;
-							box-sizing: border-box;
-						}
-
-						.fa:hover {
-							opacity: 0.5;
-						}
-
-						a .fa-facebook {
-							/* background: #3b5998; */
-							background: #151a21 !important;
-							color: #fdf9ec !important;
-						}
-
-						a .fa-instagram {
-							/* background: #125688; */
-							background: #151a21 !important;
-							color: #fdf9ec !important;
-						}
-
-						/* Darker background on mouse-over */
-						.btn:hover {
-							background-color: RoyalBlue;
-						}
-					</style>
 					<div style="position: relative; display: inline-block; width: 90%">
 						<ul id="menu-main" class="menu">
 							<li><a class="sidenav-close" href="https://menicoffee.com">Home</a></li>
@@ -184,14 +128,14 @@
 
 				@media only screen and (max-width: 600px) {
 					.caption h1 {
-						font-size: 2em;
+						font-size: 2em !important;
 					}
 				}
 			</style>
 			<div class="slider fullscreen">
 				<ul class="slides">
 					<li name="baner_1">
-						<img alt="MENI Coffee - Moon phases Banner" class="hero" src="https://menicoffee.com/wp-content/uploads/2023/03/meni_baner_1.webp" width="1920" height="1200" />
+						<img alt="MENI Coffee - Moon phases Banner" class="hero" src="https://menicoffee.com/wp-content/uploads/2023/03/meni_baner_1-2.webp" width="1920" height="1200" />
 
 						<div class="caption center-align">
 							<h1 class="hero_SubTitle">Write your own destiny</h1>
@@ -212,7 +156,7 @@
 						</div>
 					</li>
 					<li name="baner_2">
-						<img alt="MENI Coffee - Cappuccino Latte Art Banner" class="hero" src="https://menicoffee.com/wp-content/uploads/2023/03/meni_baner_2.webp" width="1920" height="1200" />
+						<img alt="MENI Coffee - Cappuccino Latte Art Banner" class="hero" src="https://menicoffee.com/wp-content/uploads/2023/03/meni_baner_2-2.webp" width="1920" height="1200" />
 
 						<div class="caption right-align">
 							<h1>ROASTED COFFEE <br />FOR YOU</h1>
@@ -231,7 +175,7 @@
 						<img
 							alt="MENI Coffee - Espresso Filter with Freshly Ground Coffee Banner"
 							class="hero"
-							src="https://menicoffee.com/wp-content/uploads/2023/03/meni_baner_3.webp"
+							src="https://menicoffee.com/wp-content/uploads/2023/03/meni_baner_3-2.webp"
 							width="1920"
 							height="1200"
 						/>
@@ -375,9 +319,9 @@
 				</div>
 				<div class="vertical_center center-align eBlock">
 					<h1 class="meni_crema text_shadow">OUR STORY</h1>
-					<h6 class="meni_crema text_shadow" style="max-width: 400px; display: block; margin-left: auto; margin-right: auto">
+					<p class="meni_crema" style="max-width: 400px; display: block; margin-left: auto; margin-right: auto; text-shadow: 2px 2px 4px #000000">
 						Meni is a specialty coffee brand inspired by the goddess of abundance and good fortune. Sourced from the finest coffee regions and roasted with care.
-					</h6>
+					</p>
 					<a href="https://menicoffee.com/index.php/our-story/" class="waves-effect waves-light mybtn">our story</a>
 				</div>
 			</div>
@@ -386,14 +330,14 @@
 		<section id="Coffee_shop" class="ligth-section">
 			<div class="ligth-section hide-on-small-only"></div>
 			<div class="center-align" style="padding: 5%; font-size: 1rem">
-				<h5 class="animate__animated animate__fadeInDown">ENJOY SPECIALTY FRESH COFFEE</h5>
-				<h6 class="dark">Find indpiration in every cup</h6>
+				<h2>ENJOY SPECIALTY FRESH COFFEE</h2>
+				<span class="dark" style="font-size: 1.2em">Find indpiration in every cup</span>
 			</div>
 			<div class="container row" style="font-size: 0.6rem; margin-bottom: 0">
 				<div name="Whole Bean Traditional" class="col s12 m6 l4">
 					<div class="card" style="max-width: 400px; border-radius: 25px">
 						<div class="card-image waves-effect waves-block waves-light">
-							<img class="activator" src="https://menicoffee.com/wp-content/uploads/2023/03/MENI-Colombian-wholebean-00.webp" decoding="async" loading="lazy" alt="MENI Coffee - Whole Bean Bag" />
+							<img class="activator" src="https://menicoffee.com/wp-content/uploads/2023/03/MENI-Colombian-wholebean-00-02.webp" width="400px" height="400px" decoding="async" loading="lazy" alt="MENI Coffee - Whole Bean Bag" style=" width: 400px;height: 400px;"/>
 						</div>
 						<div class="card-content">
 							<span class="card-title activator grey-text text-darken-4"
@@ -423,7 +367,7 @@
 				<div name="Ground Traditional" class="col s12 m6 l4">
 					<div class="card" style="max-width: 400px; border-radius: 25px">
 						<div class="card-image waves-effect waves-block waves-light">
-							<img class="activator" src="https://menicoffee.com/wp-content/uploads/2023/03/MENI-Colombian-ground-00.webp" decoding="async" loading="lazy" alt="MENI Coffee - Ground Bag" />
+							<img class="activator" src="https://menicoffee.com/wp-content/uploads/2023/03/MENI-Colombian-ground-00-02.webp" width="400px" height="400px" decoding="async" loading="lazy" alt="MENI Coffee - Ground Bag" style=" width: 400px;height: 400px;"/>
 						</div>
 						<div class="card-content">
 							<span class="card-title activator grey-text text-darken-4"
@@ -438,36 +382,6 @@
 							<span class="card-title grey-text text-darken-4"
 								>Traditional Colombian <br />
 								Ground<i class="material-icons right">close</i></span
-							>
-							<ul>
-								<li><p>Supreme coffee beans are carefully sourced from specific regions known for producing high-quality beans</p></li>
-								<li><p>Packaged to maintain freshness</p></li>
-								<li><p>Sold in whole bean form to ensure maximum freshness</p></li>
-								<li><p>Ships quickly and conveniently with Amazon Prime</p></li>
-							</ul>
-							<a href="https://www.amazon.com/dp/B0BSG6ZSBD?ref=myi_il_dp&amp;th=1" target="_blank" rel="noopener noreferrer" class="waves-effect waves-light mybtn3">TRY COFFEE </a>
-						</div>
-					</div>
-				</div>
-
-				<div name="Whole Bean Traditional" class="col s12 m6 l4 hide-on-med-and-down">
-					<div class="card" style="max-width: 400px; border-radius: 25px">
-						<div class="card-image waves-effect waves-block waves-light">
-							<img class="activator" src="https://menicoffee.com/wp-content/uploads/2023/03/MENI-Colombian-wholebean-00.webp" decoding="async" loading="lazy" alt="MENI Coffee - Whole Bean Bag" />
-						</div>
-						<div class="card-content">
-							<span class="card-title activator grey-text text-darken-4"
-								>Traditional Colombian <br />
-								Whole Bean<i class="material-icons right">more_vert</i></span
-							>
-							<p>
-								<a href="https://www.amazon.com/dp/B0BSG6ZSBD?ref=myi_il_dp&amp;th=1" target="_blank" rel="noopener noreferrer">Get it on Amazon</a>
-							</p>
-						</div>
-						<div class="card-reveal">
-							<span class="card-title grey-text text-darken-4"
-								>Traditional Colombian <br />
-								Whole Bean<i class="material-icons right">close</i></span
 							>
 							<ul>
 								<li><p>Supreme coffee beans are carefully sourced from specific regions known for producing high-quality beans</p></li>
@@ -646,16 +560,28 @@
 
 		<footer id="footer" name="FOOTER" class="footer">
 			<style>
+				footer h2 {
+					font-size: 1.2em;
+				}
 				.LineH {
 					border-bottom: #fdf9ec solid 1px;
-					max-width: 150px;
+					width: 100%;
+					padding-left: 20px;
+					padding-right: 20px;
+					/* max-width: 150px; */
+				}
+				.menu a {
+					color: #b5b4b3ff !important;
+				}
+				.menu a:hover {
+					color: #fdf9ec !important;
 				}
 			</style>
-			<div class="row left-align" style="padding: 30px; width: 100%">
+			<div class="container row center-align" style="padding: 30px; width: 100%">
 				<div class="col s12 m12 l6 push-l3" style="padding: 12px">
-					<div class="row left-align">
+					<div class="row">
 						<div class="col s6 m4">
-							<spam class="meni_crema bold LineH">About Us</spam>
+							<h2 class="meni_crema bold LineH">About Us</h2>
 							<ul class="menu">
 								<li><a href="https://menicoffee.com/company-info">Company info</a></li>
 								<li><a href="https://menicoffee.com/our-story">Our Story</a></li>
@@ -665,7 +591,7 @@
 						</div>
 
 						<div class="col s6 m4">
-							<spam class="meni_crema bold LineH">Support</spam>
+							<h2 class="meni_crema bold LineH">Support</h2>
 							<ul class="menu">
 								<li><a href="https://menicoffee.com/faq">FAQ</a></li>
 								<li><a href="https://menicoffee.com/blog">Blog</a></li>
@@ -674,7 +600,7 @@
 							</ul>
 						</div>
 						<div class="col s4 m4 hide-on-small-only">
-							<spam class="meni_crema bold LineH">Policies</spam>
+							<h2 class="meni_crema bold LineH">Policies</h2>
 							<ul class="menu">
 								<li><a href="https://menicoffee.com/terms">Terms and Conditions</a></li>
 								<li><a href="https://menicoffee.com/privacy">Privacy Policy</a></li>
@@ -686,7 +612,7 @@
 				</div>
 
 				<div class="col s12 m7 l3 pull-l6" style="padding: 12px">
-					<h6 class="meni_crema bold">Want to talk with us?</h6>
+					<h2 class="meni_crema bold">Want to talk with us?</h2>
 					<p class="meni_crema" style="padding-left: 0px; margin-top: 0px">Let's have a coffee.</p>
 
 					<a href="#contact_modal" class="waves-effect waves-light mybtn3 modal-trigger">CONTACT US</a>
@@ -700,7 +626,7 @@
 				<div class="col s12 m5 l3 center-align">
 					<img
 						src="https://menicoffee.com/wp-content/uploads/2023/03/LOGO_CREMA_COMPLETO_500x500.webp"
-						style="width: 100vw; max-width: 300px; height: auto"
+						style="width: 100vw; max-width: 250px; height: auto"
 						width="500px"
 						height="500px"
 						decoding="async"
