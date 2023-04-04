@@ -464,8 +464,14 @@ label.box {
 	margin-left: 5px;
 }
 
-.card {
+.card,
+.hoverable {
 	border-radius: 12px;
+	transition: transform 0.5s ease;
+}
+
+.hoverable:hover {
+	transform: scale(1.05);
 }
 .card .card-image img {
 	border-radius: 12px 12px 0 0;
@@ -483,3 +489,4 @@ label.box {
 .card-action a:hover {
 	color: #151a2180 !important;
 }
+
