@@ -490,3 +490,7 @@ label.box {
 	color: #151a2180 !important;
 }
 
+.test{
+	min-height: 100vh;
+}
+
