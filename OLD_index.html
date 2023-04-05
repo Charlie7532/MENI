@@ -84,7 +84,7 @@
 			</div>
 		</header>
 
-		<section id="home" name="BANER" style="min-height: 100vh !important">
+		<section id="home" name="BANER" class="meni" style="min-height: 100vh !important">
 			<style>
 				.caption h1,
 				.caption p {
@@ -98,15 +98,17 @@
 					font-size: 1.2em !important;
 					line-height: 35px;
 				}
+				.caption{
+					padding-top: 15% !important;
+				}
 
-				h1.hero_SubTitle {
+				.hero_SubTitle {
 					font-family: NowAltFont !important;
 					font-weight: lighter !important;
 					font-size: 1.5em !important;
 					letter-spacing: 0.3em !important;
 					color: #fdf9ec !important;
-					padding-top: 20%;
-					padding-top: 16%;
+					padding-top: 20% !important;
 				}
 
 				.hero1_content,
@@ -130,15 +132,26 @@
 					.caption h1 {
 						font-size: 2em !important;
 					}
+					.caption{
+						padding-top: 8% !important;
+					}
 				}
 			</style>
 			<div class="slider fullscreen">
 				<ul class="slides">
-					<li name="baner_1">
-						<img alt="MENI Coffee - Moon phases Banner" class="hero" src="https://main.menicoffee.com/assets/images/banners/meni_baner_1-2.webp" width="1920" height="1200" />
+					<li name="baner_1" style="background-image: url('https://main.menicoffee.com/assets/images/banners/meni_baner_1-3.webp'); background-position: center; z-index: 1">
+						<img
+							alt="MENI Coffee - Moon phases Banner"
+							class="hero"
+							src="https://main.menicoffee.com/assets/images/banners/meni_baner_1-3.webp"
+							width="1920"
+							height="1200"
+							style="width: 100%; height: auto; display: none"
+						/>
 
+						<div style="height: 100px"></div>
 						<div class="caption center-align">
-							<h1 class="hero_SubTitle">Write your own destiny</h1>
+							<span class="hero_SubTitle">Write your own destiny</span>
 							<h1>IN THE NAME OF COFFEE</h1>
 							<div>
 								<div class="hero1_content center row">
@@ -155,8 +168,8 @@
 							</div>
 						</div>
 					</li>
-					<li name="baner_2">
-						<img alt="MENI Coffee - Cappuccino Latte Art Banner" class="hero" src="https://main.menicoffee.com/assets/images/banners/meni_baner_2-2.webp" width="1920" height="1200" />
+					<li name="baner_2" style="background-image: url('https://main.menicoffee.com/assets/images/banners/meni_baner_2-2.webp'); background-position: center">
+						<!-- <img alt="MENI Coffee - Cappuccino Latte Art Banner" class="hero" src="https://main.menicoffee.com/assets/images/banners/meni_baner_2-2.webp" width="1920" height="1200" /> -->
 
 						<div class="caption right-align">
 							<h1>ROASTED COFFEE <br />FOR YOU</h1>
@@ -171,14 +184,14 @@
 							</div>
 						</div>
 					</li>
-					<li name="baner_3">
-						<img
+					<li name="baner_3" style="background-image: url('https://main.menicoffee.com/assets/images/banners/meni_baner_3-2.webp'); background-position: center">
+						<!-- <img
 							alt="MENI Coffee - Espresso Filter with Freshly Ground Coffee Banner"
 							class="hero"
 							src="https://main.menicoffee.com/assets/images/banners/meni_baner_3-2.webp"
 							width="1920"
 							height="1200"
-						/>
+						/> -->
 
 						<div class="caption left-align">
 							<h1>UNLEASH YOUR INNER <br />COFFEE CONNOISSEUR</h1>
@@ -329,7 +342,7 @@
 
 		<section id="Coffee_shop" class="ligth-section">
 			<div class="ligth-section hide-on-small-only"></div>
-			<div class="container ">
+			<div class="container">
 				<div class="center-align">
 					<h2 class="letter_Spacing_5em">ENJOY SPECIALTY FRESH COFFEE</h2>
 					<span class="dark" style="font-size: 1.2em">Find indpiration in every cup</span>
