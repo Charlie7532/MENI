@@ -139,7 +139,7 @@
 			</style>
 			<div class="slider fullscreen">
 				<ul class="slides">
-					<li name="baner_1" style="background-image: url('https://main.menicoffee.com/assets/images/banners/meni_baner_1-3.webp'); background-position: center; z-index: 1">
+					<li name="baner_1" style="background-image: url('https://main.menicoffee.com/assets/images/banners/meni_baner_1-3.webp'); background-position: center;">
 						<img
 							alt="MENI Coffee - Moon phases Banner"
 							class="hero"
@@ -224,6 +224,7 @@
 					transition: 0.6s ease;
 					border-radius: 50%;
 					user-select: none;
+					z-index: 900
 				}
 				.next {
 					right: 0;
@@ -236,8 +237,8 @@
 					color: #fdf9ec;
 				}
 			</style>
-			<div href="#home" class="prev vertical_center" style="z-index: 900" onclick="M.Slider.getInstance(document.querySelector('.slider')).prev()"><i class="material-icons">arrow_back</i></div>
-			<div href="#home" class="next vertical_center" style="z-index: 900" onclick="M.Slider.getInstance(document.querySelector('.slider')).next()"><i class="material-icons">arrow_forward</i></div>
+			<div href="#home" class="prev vertical_center"  onclick="M.Slider.getInstance(document.querySelector('.slider')).prev()"><i class="material-icons">arrow_back</i></div>
+			<div href="#home" class="next vertical_center"  onclick="M.Slider.getInstance(document.querySelector('.slider')).next()"><i class="material-icons">arrow_forward</i></div>
 			<script>
 				document.addEventListener('DOMContentLoaded', function () {
 					M.Slider.init(document.querySelectorAll('.slider'), {
