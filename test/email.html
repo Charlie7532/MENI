@@ -1,61 +1,105 @@
-<!-- @format -->
-
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<title>Thank you for contacting us!</title>
-		<style>
-			/* Add any desired styling here */
-			/* For example: */
-			body {
-				font-family: 'Poppins', Arial, sans-serif;
-				background-color: #f6f6f6;
-			}
-			.container {
-				max-width: 600px;
-				margin: 0 auto;
-				padding: 20px;
-				background-color: #ffffff;
-				border-radius: 5px;
-				box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-			}
-			.logo,
-			.moons {
-				text-align: center;
-				margin-bottom: 20px;
-			}
+<head>
+	<meta charset="utf-8">
+	<title>Thank you for contacting us!</title>
+	<style>
+		body {
+			font-family: 'Poppins', Arial, sans-serif;
+			background-color: #f6f6f6;
+		}
 
-			.logo img {
-				max-width: 300px;
-			}
+		.container {
+			max-width: 700px;
+			margin: 0 auto;
+			padding: 24px;
+		}
 
-			.moons img {
-				width: 100%;
-			}
-			.thank-you {
-				text-align: center;
-				font-size: 24px;
-				margin-bottom: 20px;
-			}
-			.message {
-				margin-bottom: 20px;
-			}
-			.footer {
-				text-align: center;
-			}
-		</style>
-	</head>
-	<body>
-		<div class="container">
+		.container-2 {
+			max-width: 600px;
+			margin: 0 20px;
+			padding: 0 20px;
+			background-color: #ffffff;
+			border-radius: 0 0 24px 24px;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+		}
+
+		.logo,
+		.moons {
+			text-align: center;
+		}
+
+		.logo img {
+			max-width: 100px;
+			padding: 5px;
+			border-radius: 50%;
+			background-color: #fdf9ec !important;
+			border: 1px solid grey;
+		}
+
+		.logo {
+			background-color: transparent !important;
+			height: 30px;
+			transform: translateY(-60px);
+		}
+
+		.moons {
+			border-radius: 24px;
+			background-color: #151a21;
+			padding: 60px 10px;
+		}
+
+		.moons img {
+			width: 100%;
+		}
+
+		.title {
+			color: #151a21;
+			text-align: center;
+			font-size: 24px;
+			margin-bottom: 20px;
+		}
+
+		.message {
+			margin-bottom: 20px;
+			padding: 20px;
+		}
+
+		.footer {
+			text-align: center;
+			padding: 20px;
+		}
+
+		.social-icons {
+			margin-top: 20px;
+			text-align: center;
+		}
+
+		.social-icons a {
+			display: inline-block;
+			margin-right: 10px;
+		}
+
+		.social-icons img {
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="moons">
+			<img src="https://menicoffee.com/wp-content/uploads/2023/03/MOONS.png" alt="MENI moons">
+		</div>
+
+		<div class="container-2">
 			<div class="logo">
-				<img src="https://menicoffee.com/wp-content/uploads/2023/06/MENI_Logo_Full_1080.webp" alt="MENI Logo" />
+				<img src="https://menicoffee.com/wp-content/uploads/2023/06/LOGO-MENI.png" alt="MENI Logo">
 			</div>
-			<div class="thank-you">
+			<div class="title">
 				<h2>Thank you for contacting us!</h2>
-			</div>
-			<div class="moons">
-				<img src="https://menicoffee.com/wp-content/uploads/2023/03/MOONS1.png" alt="MENI moons" />
 			</div>
 			<div class="message">
 				<p>Dear [your-name],</p>
@@ -64,10 +108,17 @@
 				<p>Should you have any further questions or require immediate assistance, please feel free to contact us at info@menicoffee.com</p>
 				<p>Once again, thank you for choosing to contact us. We look forward to assisting you further.</p>
 			</div>
-			<div class="footer">
+			<footer class="footer">
 				<p>Sincerely,</p>
 				<p>MENI</p>
-			</div>
+
+				<!-- <div class="social-icons">
+					<a href="https://www.facebook.com/your-facebook-page-url"><img src="https://example.com/facebook-icon.png" alt="Facebook"></a>
+					<a href="https://www.instagram.com/your-instagram-page-url"><img src="https://example.com/instagram-icon.png" alt="Instagram"></a>
+					<a href="https://www.pinterest.com/your-pinterest-page-url"><img src="https://example.com/pinterest-icon.png" alt="Pinterest"></a>
+				</div> -->
+			</footer>
 		</div>
-	</body>
+	</div>
+</body>
 </html>
