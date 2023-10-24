@@ -39,15 +39,19 @@
 				--header-text-color-hover: #151a2150;
 				--header-text-color-lg: #b5b4b380;
 				--header-text-color-dk: #b5b4b3;
+				--icon-height: 18px;
+				--icon-line-t: 1px;
+				--icon-color: var(--header-text-color);
 			}
 
+			.meni-main,
 			main {
-				background-color: white;
-				background-color: white;
-				position: relative;
+				width: 100%;
+				padding: 0;
+				margin: 0;
+				position: relative !important;
 				min-height: 100vh;
-				/*margin-top:68px;*/
-				padding: 30px 0 !important;
+				z-index: 1;
 			}
 			body {
 				padding: 0 !important;
@@ -55,21 +59,16 @@
 			}
 
 			.meni-header {
-				transition: all 1s ease;
 				position: sticky;
 				top: 0;
-				width: 100%;
+				z-index: 900;
+				padding: 10px 0;
 				display: flex;
 				justify-content: space-around;
 				align-items: flex-start;
-				/* background-color: #ffffff; */
-				/* background-color: #151a21; */
-				padding: 10px 0 !important;
-				z-index: 900;
 			}
 
 			.meni-header a {
-				float: left;
 				color: var(--header-text-color);
 				text-align: center;
 				text-decoration: none;
@@ -77,18 +76,18 @@
 				font-size: 18px;
 				line-height: 25px;
 				font-family: 'NowAltFont', Karla, Arial, Helvetica, sans-serif;
-				padding: 12px !important;
-				margin: 0 !important;
+				padding: 12px;
+				margin: 0;
 				border-radius: 12px;
+				transition: all 0.3s ease;
 			}
 
 			.meni-header a:focus,
 			.meni-header a:hover {
-				border: none;
-				background-color: none;
-				color: var(--header-text-color-hover);
-				outline: none;
-				text-decoration: none;
+				background-color: transparent !important;
+				color: var(--header-text-color-hover) !important;
+				outline: none !important;
+				text-decoration: none !important;
 			}
 
 			h1,
@@ -185,29 +184,18 @@
 				right: 0px;
 			}
 
-			.white-text a {
-				color: #b5b4b3 !important;
-			}
-			.meni-navPages.white-text {
-				border-bottom: solid 1px #b5b4b3 !important;
-			}
-			.logo.white-text .logo-path {
-				fill: #b5b4b3;
-			}
 			.white-background {
 				background-color: white;
 			}
-
-			/* .nav-icon-container.open {
-				left: 80px !important;
-			} */
 
 			@media (max-width: 767px) {
 				.meni-container {
 					width: 90%;
 				}
 				.meni-header {
-					border-bottom: solid 1px var(--header-border-color);
+					background-color: white !important;
+					border-bottom: solid 1px var(--header-border-color) !important;
+					padding: 0 !important;
 				}
 
 				.menu-items {
@@ -229,11 +217,12 @@
 			}
 
 			@media (min-width: 768px) and (max-width: 1099px) {
+				.meni-header {
+					background-color: white;
+					border-bottom: solid 1px var(--header-border-color);
+				}
 				.meni-container {
 					width: 90%;
-				}
-				.meni-navPages {
-					border-bottom: solid 1px var(--header-border-color);
 				}
 				.menu-items {
 					display: none;
@@ -248,38 +237,35 @@
 				.menu-items {
 					display: block;
 				}
-
-				.meni-navPages:not(.top):before {
-					width: 100%;
-					transition: width 0.3s ease;
+				.meni-navPages {
+					border-bottom: solid 1px var(--header-border-color);
 				}
 				.logo.top {
-					transform: scale(1.5); /* Increase the size of the SVG */
+					transform: scale(1.5);
 				}
 				#header.top {
 					height: 120px;
 				}
-
 				#nav-icon {
 					display: none !important;
 				}
 				.shopping-cart {
 					display: block !important;
 				}
-			}
-		</style>
-		<style name="nav-icon style">
 
-			:root {
-				--icon-height: 18px;
-				--icon-line-t: 1px;
-				--icon-color: var(--header-text-color);
+				.meni-header .white-text a {
+					color: #fff !important;
+				}
+				.logo.white-text .logo-path {
+					fill: #fff;
+				}
 			}
 
 			#nav-icon {
 				width: calc(var(--icon-height) * 1.6);
 				height: var(--icon-height);
 				position: absolute;
+				top: 15px;
 				-webkit-transform: rotate(0deg);
 				-moz-transform: rotate(0deg);
 				-o-transform: rotate(0deg);
@@ -289,16 +275,6 @@
 				-o-transition: all 0.5s ease-in-out;
 				transition: all 0.5s ease-in-out;
 				cursor: pointer;
-			}
-
-			#nav-icon.open {
-				/* position: absolute;
-				top: 20px;
-				left: 0;
-				-webkit-transform: translateX(calc(100px )); /* Adjust the 10vw value as needed */
-				/* -moz-transform: translateX(calc(100px ));
-				-o-transform: translateX(calc(100px ));
-				transform: translateX(calc(100px )); */ */
 			}
 
 			#nav-icon span {
@@ -445,7 +421,7 @@
 								href="https://shop.menicoffee.com/cart.php"
 								aria-label="{{lang 'cart.nav_aria_label'}}"
 							>
-								<span class="navUser-item-cartLabel">cart</span>
+								<!-- <span class="navUser-item-cartLabel">cart</span> -->
 								<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
 									<path
 										d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
@@ -455,75 +431,6 @@
 							</a>
 						</div>
 					</nav>
-				</div>
-
-				<div id="meni-nav-sidebar" class="meni-nav-sidebar">
-					<style>
-						.meni-nav-sidebar {
-							width: 250px;
-							height: 100vh;
-							background-color: #fdf9ec;
-							position: fixed;
-							top: 0;
-							left: 0;
-							z-index: 999;
-							overflow-x: hidden;
-							transition: 0.3s;
-							padding-top: 0px !important;
-							border-radius: 0 20px 20px 0;
-							box-shadow: 5px 0px 15px 0px rgba(0, 0, 0, 0.2);
-							transform: translateX(-300px);
-						}
-
-						.sidebar-content {
-							padding: 60px 10px 10px 10px !important;
-							position: relative;
-						}
-
-						.meni-nav-sidebar.open {
-							transform: translateX(0);
-						}
-
-						#nav-icon {
-							cursor: pointer;
-						}
-
-						.meni-sidebar-list {
-							list-style: none !important;
-							padding: 0 !important;
-							margin: 0 !important;
-						}
-
-						.meni-sidebar-list .meni-navPages-item {
-							margin-bottom: 10px !important;
-						}
-
-						.meni-sidebar-list .meni-navPages-item a {
-							text-decoration: none;
-							color: var(--header-text-color); /* You can change the link color as per your design */
-							font-weight: 300;
-							font-size: 18px; /* You can adjust the font size as needed */
-							transition: color 0.3s ease; /* Smooth color transition on hover */
-							text-align: left !important;
-							width: 100%;
-							padding: 12px !important;
-							text-transform: initial !important;
-						}
-
-						.meni-sidebar-list .meni-navPages-item a:hover {
-							color: var(--header-text-color); /* Change the link color on hover */
-						}
-					</style>
-					<div class="sidebar-content">
-						<!-- Sidebar content goes here -->
-						<ul class="meni-sidebar-list">
-							<li class="meni-navPages-item"><a href="https://menicoffee.com/">Home</a></li>
-							<li class="meni-navPages-item"><a href="https://menicoffee.com/coffee-shop/"> Shop</a></li>
-							<li class="meni-navPages-item"><a href="https://menicoffee.com/our-community/blog/">Blog</a></li>
-							<li class="meni-navPages-item"><a href="https://menicoffee.com/index.php/our-story">Our Story</a></li>
-							<li class="meni-navPages-item"><a href="https://menicoffee.com/about-us/contact-us/">Contact Us</a></li>
-						</ul>
-					</div>
 				</div>
 			</div>
 
@@ -549,6 +456,85 @@
 				});
 			</script>
 		</header>
+		<section id="meni-nav-sidebar" class="meni-nav-sidebar">
+			<style>
+				.meni-nav-sidebar {
+					width: 250px;
+					height: 100vh;
+					background-color: #fdf9ec;
+					position: fixed;
+					top: 0;
+					left: 0;
+					z-index: 100;
+					overflow-x: hidden;
+					transition: 0.3s;
+					padding-top: 0px !important;
+					border-radius: 0 20px 20px 0;
+					box-shadow: 5px 0px 15px 0px rgba(0, 0, 0, 0.2);
+					transform: translateX(-300px);
+				}
+
+				.sidebar-content {
+					padding: 90px 10px 10px 10px !important;
+					position: relative;
+				}
+
+				.meni-nav-sidebar.open {
+					transform: translateX(0);
+				}
+
+				#nav-icon {
+					cursor: pointer;
+				}
+
+				.meni-sidebar-list {
+					list-style: none !important;
+					padding: 0 !important;
+					margin: 0 !important;
+				}
+
+				.meni-sidebar-list .meni-navPages-item {
+					margin-bottom: 20px !important;
+				}
+
+				.meni-sidebar-list .meni-navPages-item a {
+					text-decoration: none;
+					color: var(--header-text-color); /* You can change the link color as per your design */
+					font-weight: 500;
+					font-size: 18px; /* You can adjust the font size as needed */
+					transition: color 0.3s ease; /* Smooth color transition on hover */
+					text-align: left !important;
+					width: 100%;
+					padding: 12px !important;
+					text-transform: initial !important;
+				}
+
+				.meni-sidebar-list .meni-navPages-item a:hover {
+					color: var(--header-text-color); /* Change the link color on hover */
+				}
+			</style>
+			<div class="sidebar-content">
+				<div>
+					<ul class="meni-sidebar-list">
+						<li class="meni-navPages-item"><a href="https://menicoffee.com/">Home</a></li>
+						<li class="meni-navPages-item"><a href="https://menicoffee.com/coffee-shop/">Shop</a></li>
+						<li class="meni-navPages-item"><a href="https://menicoffee.com/our-community/blog/">Blog</a></li>
+						<li class="meni-navPages-item"><a href="https://menicoffee.com/index.php/our-story">Our Story</a></li>
+						<li class="meni-navPages-item"><a href="https://menicoffee.com/about-us/contact-us/">Contact Us</a></li>
+					</ul>
+				</div>
+				<br />
+				<hr />
+				<br />
+				<div>
+					<ul class="meni-sidebar-list">
+						<li class="meni-navPages-item"><a href="https://shop.menicoffee.com/login.php">Log In</a></li>
+						<li class="meni-navPages-item"><a href="https://shop.menicoffee.com/cart.php">Cart</a></li>
+						<li class="meni-navPages-item"><a href="https://shop.menicoffee.com/giftcertificates.php">Gift Certificates</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
 
 		<main>
 			<section id="home" name="BANER" class="meni" style="min-height: calc(100vh - 81px) !important; position: relative; overflow: hidden">
